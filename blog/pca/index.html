@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <title>Dimensionality Reduction - PCA | </title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="Machine Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.d828da8088b4161470f1cd9db0bd48a40bae7e60c27f094d44132fa4b59ef01e.css" integrity="sha256-2CjagIi0FhRw8c2dsL1IpAuufmDCfwlNRBMvpLWe8B4="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.331a1174937eef97c55572e46b242decc35c43b1553ed9cdfb5a4a4c9dd30480.css" integrity="sha256-MxoRdJN&#43;75fFVXLkayQt7MNcQ7FVPtnN&#43;1pKTJ3TBIA="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": ""
+      },
+      "articleSection" : "blog",
+      "name" : "Dimensionality Reduction - PCA",
+      "headline" : "Dimensionality Reduction - PCA",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2020",
+      "datePublished": "2020-10-01 22:39:59 -0500 CDT",
+      "dateModified" : "2020-10-01 22:39:59 -0500 CDT",
+      "url" : "\/blog\/pca\/",
+      "wordCount" : "787",
+      "keywords" : ["Machine Learning", "Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/about">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  href="/contact">contact</a>
+      </li>
+    
+      <li>
+        <a  href="/">home</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Dimensionality Reduction - PCA</h1>
+            <time datetime="2020-10-01 22:39:59 -0500 CDT" class="post__date">Oct 1 2020</time> 
+          </header>
+          <article class="post__content">
+              
+<p><img src="/images/data.gif" alt="Alt text for my gif"></p>
+<p>Today, I am going to talk about Feature Engineer, and more specifically, PCA which is one technique in feature extraction.</p>
+<p>Feature Engineer is an important part of machine learning. Like a quote showed above, how your algorithm does, highly depends on your data. Feature engineer include feature selection and feature extraction. We are only going to focus on feature extraction&mdash;PCA here.</p>
+<h2 id="what-is-pca-and-why-we-are-doing-it">What is PCA and why we are doing it?💭<a class="anchor" href="#what-is-pca-and-why-we-are-doing-it">#</a></h2>
+<p>PCA refers to Principal Component Analysis. It is a way of reducing dimensions used in machine learning. What PCA actually does is finding the direction in which the data has maximum variance (because you want to capture all data points and information!). Like the picture showed below, the largest variance is with the purple line.</p>
+<p><img src="/images/PCA.gif" alt="Alt text for my gif"></p>
+<h2 id="feature-selection-----backward-elimination-example-with-code">Feature Selection &mdash; Backward Elimination Example with code📘<a class="anchor" href="#feature-selection-----backward-elimination-example-with-code">#</a></h2>
+<p>For this point, I already understood the concept “Feature Selection”, in which it calculates the P-value and get rid of the features that are unimportant. I also included this in my Machine Learning project, and I’ve attached my code below.</p>
+<pre><code class="language-json">X_with_ones= np.append (arr=np.ones([X.shape[0],1]).astype(int), values = X, axis = 1) 
+print(&quot;before Elimination, there are&quot;,X_with_ones.shape[1],&quot;columns&quot;)
+</code></pre>
+<pre><code class="language-json">[output] before Elimination, there are 16 columns
+</code></pre>
+<pre><code class="language-json">import statsmodels.api as sm 
+def backwardElimination(x, sl):
+	numVars= len(x[0])
+	for i in range(0, numVars):
+		obj_OLS= sm.OLS(y, x).fit()
+		maxVar= max(obj_OLS.pvalues).astype(float) 
+		if maxVar&gt; sl:
+		    for j in range(0, numVars-i):
+			    if (obj_OLS.pvalues[j].astype(float) == maxVar):
+	x = np.delete(x, j, 1) obj_OLS.summary()
+	return x
+</code></pre>
+<pre><code class="language-json">SL=0.05
+X_modeled=backwardElimination(X_with_ones, SL)
+X_modeled.shape
+</code></pre>
+<pre><code class="language-json">[output] (4240,7)
+</code></pre>
+<p>As shown above, the features are reduced to 7 from 16 after the feature selection. As we can see, there are 9 features were deleted after Backward Elimination. What’s problem with this? Because the 9 features were deleted, we missed out all the contribution that those features could bring.</p>
+<h2 id="feature-extraction---pca-solves-this-problem">Feature Extraction - PCA solves this problem!✅<a class="anchor" href="#feature-extraction---pca-solves-this-problem">#</a></h2>
+<p>In PCA, we don’t get rid of the features. Instead, it adds new features that combine the result of other features. In this way, it retain as much information as possible. This is the main difference between PCA and feature selection.</p>
+<h3 id="how-does-pca-work-">How does PCA work 🤔<a class="anchor" href="#how-does-pca-work-">#</a></h3>
+<p>1️⃣ We standardize the data first, because it is a very important step doing PCA. If the data is not standardized, the data with large range(0-100) will dominate the data with small range (0-1). It can be achieved by using the StandardScaler in <code>sklearn</code>. After standardization is done, data will be transformed into same scale.</p>
+<p>2️⃣ After Standardization, we need to compute covariance. Remember, covariance is calculated as <code>Cov(X,Y) = Σ E((X-μ)E(Y-ν))/n-1</code></p>
+<p>Variance represents how wide the data spreads. So what does covariance mean?</p>
+<p>It means how changes in one variable are associated with the changes in the other variable. We will calculate all the variance between each variable, and store in a matrix as showed below:</p>
+<p><img src="/images/matrix.png" alt="this is an image"></p>
+<p>As we can see, the covariance of a variable to itself(cov(x,x), cov(y,y), cov(z,z)) is at the diagonal of this graph. Also, the matrix is symmetric. After we have the matrix, we will be able to calculate the eigenvector and eigenvalues.</p>
+<p>The eigenvectors of the covariance matrix represent the principal components. Higher the eigenvalue, higher the variance that is captured by the corresponding vector. Therefore let’s talk about what is eigenvectors and eigenvalues, because they are the core of PCA!</p>
+<p>3️⃣ Eigenvectors represent the directions of the principal components. We can use the following equation to solve eigenvalue:</p>
+<p><code>Covariance matrix * Eigenvector = Eigenvalue * eigenvector. </code></p>
+<p>Big eigenvalues correlate with important directions. As showed in picture below, we will choose to discard the smaller eigenvalue (0.04).</p>
+<p><img src="/images/eigenvalues.png" alt="this is an image"></p>
+<p>4️⃣ And we can move to the next step, which is feature vector. In this step, we will choose whether to keep or not keep those low eigenvalues, and form a vector with the remaining ones. We call this feature vector. So if we choose to keep 9 eigenvectors out of 10, our final data will contain 9 dimensions.</p>
+<p>PCA is implemented in <code>scikit-learn</code>. n_components is a parameter, in which you can specify a value to decide the percentage of variance that you want to retain. For example, &ldquo;PCA(n_components=0.99)&rdquo; means 99% of the variance of the original features has been retained. Since in pca, our purpose is to choose the principal component, you should not use n_components=1.</p>
+<p>5️⃣ For this last step, we need to generate our final data set because we haven’t made any change yet. We will do this by multiplying the transpose of the feature vector we got from the previous step, with the transpose of the standardized dataset.</p>
+<h3 id="conclusion">Conclusion:🎉<a class="anchor" href="#conclusion">#</a></h3>
+<p>To conclude, what PCA does is to get the direction of the data with largest variance. It allows us to get rid of the smallest eigenvector that is unimportant.</p>
+<p><em>(This post was originally written on April 3rd 2020 and posted on wix.com)</em></p>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    </ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="/blog/kfold/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">K-fold Cross Validation</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" title="LinkedIn"
+         href="https://www.linkedin.com/in/jessie-zheng612/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/linkedin.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/Zheng612"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Email"
+         href="mailto:Zheng612@umn.edu"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Facebook"
+         href="https://www.facebook.com/profile.php?id=100008026365969"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/facebook.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p></p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

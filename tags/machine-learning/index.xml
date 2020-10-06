@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on </title>
+    <link>/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 01 Oct 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dimensionality Reduction - PCA</title>
+      <link>/blog/pca/</link>
+      <pubDate>Thu, 01 Oct 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/blog/pca/</guid>
+      <description>Today, I am going to talk about Feature Engineer, and more specifically, PCA which is one technique in feature extraction.
+Feature Engineer is an important part of machine learning. Like a quote showed above, how your algorithm does, highly depends on your data. Feature engineer include feature selection and feature extraction. We are only going to focus on feature extraction&amp;mdash;PCA here.
+What is PCA and why we are doing it?💭 PCA refers to Principal Component Analysis.</description>
+    </item>
+    
+    <item>
+      <title>K-fold Cross Validation</title>
+      <link>/blog/kfold/</link>
+      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/kfold/</guid>
+      <description>In machine learning, we usually split the data into training and testing sets so that we can evaluate the model(s). This method, however, is not reliable because the accuracy of your model is largely depend on what you got! Accuracy obtained from one test set can be very different than another test set. This post will talk about K-fold Cross Validation.
+The Validation Set Approach:❓ Usually before we train a model, we spilt the data into training and test set.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <title>K-fold Cross Validation | </title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="Machine Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.d828da8088b4161470f1cd9db0bd48a40bae7e60c27f094d44132fa4b59ef01e.css" integrity="sha256-2CjagIi0FhRw8c2dsL1IpAuufmDCfwlNRBMvpLWe8B4="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.331a1174937eef97c55572e46b242decc35c43b1553ed9cdfb5a4a4c9dd30480.css" integrity="sha256-MxoRdJN&#43;75fFVXLkayQt7MNcQ7FVPtnN&#43;1pKTJ3TBIA="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": ""
+      },
+      "articleSection" : "blog",
+      "name" : "K-fold Cross Validation",
+      "headline" : "K-fold Cross Validation",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2020",
+      "datePublished": "2020-10-01 21:56:06 -0500 CDT",
+      "dateModified" : "2020-10-01 21:56:06 -0500 CDT",
+      "url" : "\/blog\/kfold\/",
+      "wordCount" : "550",
+      "keywords" : ["Machine Learning", "Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/about">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+      <li>
+        <a  href="/contact">contact</a>
+      </li>
+    
+      <li>
+        <a  href="/">home</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">K-fold Cross Validation</h1>
+            <time datetime="2020-10-01 21:56:06 -0500 CDT" class="post__date">Oct 1 2020</time> 
+          </header>
+          <article class="post__content">
+              
+<p><img src="/images/kfoldmeme.png" alt="this is an image"></p>
+<p>In machine learning, we usually split the data into training and testing sets so that we can evaluate the model(s). This method, however, is not reliable because the accuracy of your model is largely depend on what you got! Accuracy obtained from one test set can be very different than another test set. This post will talk about K-fold Cross Validation.</p>
+<h3 id="the-validation-set-approach">The Validation Set Approach:❓<a class="anchor" href="#the-validation-set-approach">#</a></h3>
+<p>Usually before we train a model, we spilt the data into training and test set. For example, use 80% of the data to train a model, and use 20% of the data to test our model. This approach is called The Validation Set Approach.</p>
+<pre><code class="language-json">from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test=train_test_split(X, y, test_size=0.25)
+</code></pre>
+<p>As the code shows above, we imported the train_test_split from the <code>sklearn_model_selection</code> package, and split the X and y dataset to train and test data, with 25% being test set and 75% being training set. However, let&rsquo;s talk about why this is not the best approach.</p>
+<h3 id="what-is-k-fold">“What is K-fold?”🤔<a class="anchor" href="#what-is-k-fold">#</a></h3>
+<h3 id="why-should-i-use-k-fold">“Why should I use K-fold?”🤔<a class="anchor" href="#why-should-i-use-k-fold">#</a></h3>
+<h3 id="whats-the-difference-between-train_test_split-and-k-fold">“What’s the difference between train_test_split and K-fold?”🤔<a class="anchor" href="#whats-the-difference-between-train_test_split-and-k-fold">#</a></h3>
+<p>Problems with split:</p>
+<ol>
+<li>The final model largely depends on the train and test set you split. What does this mean?</li>
+</ol>
+<p>This means the mean squared error(MSE) is largely depends on what training set and test set you get when spiltting the dataset. Therefore, the result could be very different.</p>
+<ol start="2">
+<li>When we have very small number of data, the result is going to be worse.</li>
+</ol>
+<p>As we all know, if we have more training data, our result is usually going to be better. However, if we only have 100 rows of data, and split to 80 and 20, we only get 20 rows in test set, which is not enough. In this situation, we would get any performance due to chance.</p>
+<h3 id="k-fold-solves-the-problem">K-fold solves the problem!✅<a class="anchor" href="#k-fold-solves-the-problem">#</a></h3>
+<p>K-fold cross validation means splitting the data into k parts called “folds”. The model is then trained using k-1 folds – combined into one training set – and then the last fold is used as a test set. After repeating this process k times, we averaged to produce the overall measurement. (reference: Machine Learning with Python Cookbook).</p>
+<p><img src="/images/k_fold.png" alt="this is an image"></p>
+<p>In my machine learning project(coronary heart disease prediction), I used both train-test split and k-fold. Let&rsquo;s see the code of k-fold for one of my models(logistic regression):</p>
+<pre><code>def run_kfold(logreg):
+	kf = KFold(n_splits=10)
+	outcomes = []
+	fold = 0
+	for train_index, test_index in kf.split(X_modeled):
+		fold += 1
+		X_train, X_test = X_modeled[train_index], X_modeled[test_index] 
+		y_train, y_test = y[train_index], y[test_index] 
+		logreg.fit(X_train, y_train)
+		accuracy_lr = logreg.score(X_test, y_test)*100 outcomes.append(accuracy_lr)
+		print(&quot;Fold {0} accuracy: {1}&quot;.format(fold, accuracy_lr))
+	mean_outcome_logistic_regression = np.mean(outcomes)
+	print(&quot;Mean Accuracy: {0}&quot;.format(mean_outcome_logistic_regression)) 
+	return(mean_outcome_logistic_regression)
+logreg_Kfoldscore=run_kfold(logreg)
+</code></pre>
+<pre><code>Output:
+Fold 1 accuracy: 81.36792452830188
+Fold 2 accuracy: 85.84905660377359
+Fold 3 accuracy: 85.84905660377359
+Fold 4 accuracy: 87.97169811320755
+Fold 5 accuracy: 85.84905660377359
+Fold 6 accuracy: 83.9622641509434
+Fold 7 accuracy: 86.55660377358491
+Fold 8 accuracy: 86.08490566037736
+Fold 9 accuracy: 86.08490566037736
+Fold 10 accuracy: 83.9622641509434
+Mean Accuracy: 85.35377358490565
+</code></pre>
+<p>From the above code, you can see that I wrote <code>run_kfold</code> method to get the each accuracy among 10 interaction and calculate <code>mean accuracy</code> of my logistic regreesion model. I also compared the results at the end in a dataframe.</p>
+<pre><code>models = pd.DataFrame({
+'Model': ['Support Vector Machines', 
+	   'Logistic Regression',
+	   'KNN',
+           'Decision Tree',
+	   'Naive Bayes', 
+	   'Random Forest'],
+    'Score': [SVM_score, Logistic_regression_score,knn_score, decision_tree_score, NB_score,
+              RandomForest_score],
+    'Kfold score': [svc_KFoldScore,logreg_Kfoldscore,knn_Kfoldscore,DT_Kfoldscore, nb_Kfoldscore, rf_Kfoldscore]}) 
+models.sort_values(by='Score', ascending=False)
+</code></pre>
+<p><img src="/images/post_1_results.png" alt="this is an image"></p>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    </ul>
+
+ <div class="pagination">
+  
+
+  
+    <a class="pagination__item" href="/blog/pca/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >Dimensionality Reduction - PCA</a>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" title="LinkedIn"
+         href="https://www.linkedin.com/in/jessie-zheng612/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/linkedin.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/Zheng612"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Email"
+         href="mailto:Zheng612@umn.edu"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Facebook"
+         href="https://www.facebook.com/profile.php?id=100008026365969"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/facebook.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p></p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project on </title>
+    <link>/tags/project/</link>
+    <description>Recent content in Project on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 01 Oct 2020 21:56:06 -0500</lastBuildDate><atom:link href="/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Retail Data Analysis</title>
+      <link>/blog/uniqlo_sales_analysis/</link>
+      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/uniqlo_sales_analysis/</guid>
+      <description>Sales analysis is a way to evaluate the performance of sales by analyzing sales data. In order to improve sales effectiveness and make smart decisions, it’s important to conduct sales analysis regularly. Today, I decided to share one of the sales analysis projects for UNIQLO sales data.
+About UNIQLO: Uniqlo is one of the brands in Fast Retailing, a global company that operates multiple fashion brands. UNIQLO generates about 1.9 trillion Yen in annual revenue (FY 2019) from 2200 stores globally.</description>
+    </item>
+    
+  </channel>
+</rss>

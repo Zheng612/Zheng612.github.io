@@ -18,6 +18,18 @@ What is PCA and why we are doing it?💭 PCA refers to Principal Component Analy
     </item>
     
     <item>
+      <title>Exploratory Data Analysis (EDA)</title>
+      <link>/blog/eda/</link>
+      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/eda/</guid>
+      <description>Understanding data is one of the most important steps for anyone starting out a machine learning project. Exploratory Data Analysis is one of the ways to do that. “EDA is performed in order to define and refine the selection of feature variables that will be used for machine learning”. This post briefly talks about EDA and Bivariate Analysis.
+The post will cover:
+What is EDA and Bivariate Analysis
+Why it is important</description>
+    </item>
+    
+    <item>
       <title>K-fold Cross Validation</title>
       <link>/blog/kfold/</link>
       <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>

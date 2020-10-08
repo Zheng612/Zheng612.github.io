@@ -18,6 +18,18 @@ What is PCA and why we are doing it?💭 PCA refers to Principal Component Analy
     </item>
     
     <item>
+      <title>Exploratory Data Analysis (EDA)</title>
+      <link>/blog/eda/</link>
+      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/eda/</guid>
+      <description>Understanding data is one of the most important steps for anyone starting out a machine learning project. Exploratory Data Analysis is one of the ways to do that. “EDA is performed in order to define and refine the selection of feature variables that will be used for machine learning”. This post briefly talks about EDA and Bivariate Analysis.
+The post will cover:
+What is EDA and Bivariate Analysis
+Why it is important</description>
+    </item>
+    
+    <item>
       <title>K-fold Cross Validation</title>
       <link>/blog/kfold/</link>
       <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
@@ -25,6 +37,16 @@ What is PCA and why we are doing it?💭 PCA refers to Principal Component Analy
       <guid>/blog/kfold/</guid>
       <description>In machine learning, we usually split the data into training and testing sets so that we can evaluate the model(s). This method, however, is not reliable because the accuracy of your model is largely depend on what you got! Accuracy obtained from one test set can be very different than another test set. This post will talk about K-fold Cross Validation.
 The Validation Set Approach:❓ Usually before we train a model, we spilt the data into training and test set.</description>
+    </item>
+    
+    <item>
+      <title>Retail Data Analysis</title>
+      <link>/blog/uniqlo_sales_analysis/</link>
+      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/uniqlo_sales_analysis/</guid>
+      <description>Sales analysis is a way to evaluate the performance of sales by analyzing sales data. In order to improve sales effectiveness and make smart decisions, it’s important to conduct sales analysis regularly. Today, I decided to share one of the sales analysis projects for UNIQLO sales data.
+About UNIQLO: Uniqlo is one of the brands in Fast Retailing, a global company that operates multiple fashion brands. UNIQLO generates about 1.9 trillion Yen in annual revenue (FY 2019) from 2200 stores globally.</description>
     </item>
     
     <item>

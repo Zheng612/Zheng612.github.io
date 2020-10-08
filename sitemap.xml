@@ -28,7 +28,22 @@
   </url>
   
   <url>
+    <loc>/blog/eda/</loc>
+    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/kfold/</loc>
+    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/project/</loc>
+    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/uniqlo_sales_analysis/</loc>
     <lastmod>2020-10-01T21:56:06-05:00</lastmod>
   </url>
   

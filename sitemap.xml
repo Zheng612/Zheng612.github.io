@@ -8,12 +8,22 @@
   </url>
   
   <url>
-    <loc>/blog/pca/</loc>
+    <loc>/blog/baby_product/</loc>
     <lastmod>2020-10-01T22:39:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/machine-learning/</loc>
+    <loc>/tags/concept/</loc>
+    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-visualization/</loc>
+    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/pca/</loc>
     <lastmod>2020-10-01T22:39:59-05:00</lastmod>
   </url>
   
@@ -38,11 +48,6 @@
   </url>
   
   <url>
-    <loc>/tags/project/</loc>
-    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/uniqlo_sales_analysis/</loc>
     <lastmod>2020-10-01T21:56:06-05:00</lastmod>
   </url>
@@ -57,6 +62,10 @@
   
   <url>
     <loc>/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>/leetcode/</loc>
   </url>
   
 </urlset>

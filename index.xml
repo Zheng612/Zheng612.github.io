@@ -29,6 +29,16 @@ What is PCA and why we are doing it?💭 PCA refers to Principal Component Analy
     </item>
     
     <item>
+      <title>How to add a custom domain to your hugo site?</title>
+      <link>/blog/custom_domain/</link>
+      <pubDate>Thu, 01 Oct 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/blog/custom_domain/</guid>
+      <description>This post introduce how to configure an apex domain to your hugo site. A lot of people prefer to have a custom domain instead &amp;ldquo;http:XXXX.github.io&amp;rdquo;. Let&amp;rsquo;s go through the steps to add your domain name to your hugo site:
+Step 1: acquire a domain: I got my domain name from Google Domains. Depends on different domain names, the prices are different. For example, my domain name &amp;ldquo;JiaxinZheng.com&amp;rdquo; costs 12 bucks per year.</description>
+    </item>
+    
+    <item>
       <title>Exploratory Data Analysis (EDA)</title>
       <link>/blog/eda/</link>
       <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
@@ -92,8 +102,7 @@ Let&amp;rsquo;s connect 🤝 💼 LinkedIn
       
       <guid>/contact/</guid>
       <description>💼 LinkedIn
-💻 GitHub
-📩 [Email]: zheng612@umn.edu</description>
+💻 GitHub</description>
     </item>
     
     <item>

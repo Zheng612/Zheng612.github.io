@@ -2,12 +2,12 @@
 <html lang="">
 
 <head>
-  <title>Exploratory Data Analysis (EDA) | </title>
+  <title>Tidy data | </title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
   <meta name="description" content="">
-  <meta name="keywords" content="Machine Learning">
+  <meta name="keywords" content="Project">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,8 +48,8 @@
             "@id": ""
       },
       "articleSection" : "blog",
-      "name" : "Exploratory Data Analysis (EDA)",
-      "headline" : "Exploratory Data Analysis (EDA)",
+      "name" : "Tidy data",
+      "headline" : "Tidy data",
       "description" : "",
       "inLanguage" : "en-US",
       "author" : "",
@@ -60,9 +60,9 @@
       "copyrightYear" : "2020",
       "datePublished": "2020-10-01 21:56:06 -0500 CDT",
       "dateModified" : "2020-10-01 21:56:06 -0500 CDT",
-      "url" : "\/blog\/eda\/",
-      "wordCount" : "377",
-      "keywords" : ["Machine Learning", "Blog"]
+      "url" : "\/blog\/healthcare\/",
+      "wordCount" : "0",
+      "keywords" : ["Project", "Blog"]
     }
   
   </script>
@@ -115,61 +115,12 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Exploratory Data Analysis (EDA)</h1>
+            <h1 id="post__title">Tidy data</h1>
             <time datetime="2020-10-01 21:56:06 -0500 CDT" class="post__date">Oct 1 2020</time> 
           </header>
           <article class="post__content">
               
-<p><img src="/images/stats.gif" alt="Alt text for my gif"></p>
-<p>Understanding data is one of the most important steps for anyone starting out a machine learning project. Exploratory Data Analysis is one of the ways to do that. “EDA is performed in order to define and refine the selection of feature variables that will be used for machine learning”. This post briefly talks about EDA and Bivariate Analysis.</p>
-<p>The post will cover:</p>
-<p>What is EDA and Bivariate Analysis</p>
-<p>Why it is important</p>
-<p>EDA and feature Engineering</p>
-<h2 id="what-is-eda">What is EDA?<a class="anchor" href="#what-is-eda">#</a></h2>
-<p>EDA stands for Exploratory Data Analysis. It is a crucial step to understand data. There are so many useful information that you can get from EDA:</p>
-<p>💡Distribution(skewness)</p>
-<p>💡Outliers(See the figure below)</p>
-<p>💡Mean</p>
-<p>💡Median</p>
-<p>💡Correlation</p>
-<p>💡etc;</p>
-<p><img src="/images/outlier.png" alt="this is an image"></p>
-<p>Knowing about these are very important in terms of understanding our data. Just like the box plot shown below, because of there are a lot of outliers observed in the totChol column, the missing values were filled with median instead of mean.</p>
-<h2 id="bivariate-analysis">Bivariate Analysis<a class="anchor" href="#bivariate-analysis">#</a></h2>
-<p>Additionally, I also utilized Bivariate Analysis in my project to understand the data. Bivariate analysis, just like its name, refers to analysis that help you understand association between two variables, usually with visualizations.</p>
-<p>For example,  I wanted to understand the association between prevalentStroke and whether the person will get heart disease. As shown below, people who have prevalent stroke is more likely to develop Heart Disease than people who don’t have prevalent stroke.</p>
-<pre><code>data[[&quot;prevalentStroke&quot;,&quot;TenYearCHD&quot;]].groupby
-(&quot;prevalentStroke&quot;, as_index=False).mean().sort_values(&quot;TenYearCHD&quot;)
-</code></pre>
-<p>Output:</p>
-<table>
-<thead>
-<tr>
-<th>prevalentStroke</th>
-<th>TenYearCHD</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>0.440000</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0.150178</td>
-</tr>
-</tbody>
-</table>
-<p>The reason that I used Bivariate Analysis was because I wanted to know the relationship between each category and the dependent variable(coronary heart disease). Second of all, I wanted to test our hypothesis, which states that people with bmi over 30 are more likely to develop heart disease. And the probability of getting heart disease within each BMI range, should be calculated as:
-<code>Number of people(BMI  20~30) that have CHD/Total number of people(BMI 20~30)</code></p>
-<pre><code>g=sns.FacetGrid(data, col=&quot;TenYearCHD&quot;)
-g.map(plt.hist, &quot;BMI)
-</code></pre>
-<p><img src="/images/bmi.png" alt="this is an image"></p>
-<h3 id="conclusion">Conclusion:<a class="anchor" href="#conclusion">#</a></h3>
-<p>In machine learning, it is beneficial to do EDA because it helps you to understand the data. After EDA, you can combine insights that you have got from the data, to feature engineering &mdash; to create or drop features. Therefore, EDA provide insights, feature engineering makes action on the data.</p>
-<p>(Originally written on wix.com Apr 15 2020)</p>
+<p><img src="/images/" alt="Alt text for my gif"></p>
 
 
               
@@ -178,22 +129,15 @@ g.map(plt.hist, &quot;BMI)
 
 <ul class="tags__list">
     
-    <li class="tag__item">
-        <a class="tag__link" href="/tags/concept/">concept</a>
-    </li></ul>
+    </ul>
 
  <div class="pagination">
   
-    <a class="pagination__item" href="/blog/chd/">
-        <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Framingham Heart Disease Study - Logistic Regression</span>
-    </a>
-  
 
   
-    <a class="pagination__item" href="/blog/custom_domain/">
+    <a class="pagination__item" href="/blog/uniqlo_sales_analysis/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >How to add a custom domain to your hugo site?</a>
+      <span class="pagination__title" >Retail Data Analysis - Python</a>
     </a>
   
 </div>

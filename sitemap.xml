@@ -73,6 +73,11 @@
   </url>
   
   <url>
+    <loc>/blog/healthcare/</loc>
+    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
   </url>
   
@@ -85,7 +90,7 @@
   </url>
   
   <url>
-    <loc>/leetcode/</loc>
+    <loc>/practice/</loc>
   </url>
   
 </urlset>

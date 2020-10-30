@@ -81,6 +81,15 @@ About UNIQLO: Uniqlo is one of the brands in Fast Retailing, a global company th
     </item>
     
     <item>
+      <title>Tidy data</title>
+      <link>/blog/healthcare/</link>
+      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/healthcare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title></title>
       <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -106,12 +115,12 @@ Let&amp;rsquo;s connect 🤝 💼 LinkedIn
     </item>
     
     <item>
-      <title>leetcode</title>
-      <link>/leetcode/</link>
+      <title>Practice</title>
+      <link>/practice/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/leetcode/</guid>
-      <description>   Link Language Difficulty     Big Countries mysql Easy   Classes More Than 5 students mysql Easy   Customers Who Never Order mysql Easy   Delete Duplicate Emails mysql Easy   Second Highest Salary mysql Easy    </description>
+      <guid>/practice/</guid>
+      <description>   Link Language Difficulty     Big Countries mysql Easy   Classes More Than 5 students mysql Easy   Customers Who Never Order mysql Easy   Delete Duplicate Emails mysql Easy   Second Highest Salary mysql Easy   Two Number Sum python Easy    </description>
     </item>
     
   </channel>

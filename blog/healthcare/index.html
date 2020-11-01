@@ -2,12 +2,12 @@
 <html lang="">
 
 <head>
-  <title>Tidy data | </title>
+  <title>What is healthcare analytics | </title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
   <meta name="description" content="">
-  <meta name="keywords" content="Project">
+  <meta name="keywords" content="healthcare analytics">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,8 +48,8 @@
             "@id": ""
       },
       "articleSection" : "blog",
-      "name" : "Tidy data",
-      "headline" : "Tidy data",
+      "name" : "What is healthcare analytics",
+      "headline" : "What is healthcare analytics",
       "description" : "",
       "inLanguage" : "en-US",
       "author" : "",
@@ -61,8 +61,8 @@
       "datePublished": "2020-10-01 21:56:06 -0500 CDT",
       "dateModified" : "2020-10-01 21:56:06 -0500 CDT",
       "url" : "\/blog\/healthcare\/",
-      "wordCount" : "0",
-      "keywords" : ["Project", "Blog"]
+      "wordCount" : "572",
+      "keywords" : ["healthcare analytics", "Blog"]
     }
   
   </script>
@@ -92,15 +92,15 @@
       </li>
     
       <li>
+        <a  href="/coding_practice">coding practice</a>
+      </li>
+    
+      <li>
         <a  href="/contact">contact</a>
       </li>
     
       <li>
         <a  href="/">home</a>
-      </li>
-    
-      <li>
-        <a  href="/practice">practice</a>
       </li>
     
   </ul>
@@ -115,12 +115,91 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Tidy data</h1>
+            <h1 id="post__title">What is healthcare analytics</h1>
             <time datetime="2020-10-01 21:56:06 -0500 CDT" class="post__date">Oct 1 2020</time> 
           </header>
           <article class="post__content">
               
-<p><img src="/images/" alt="Alt text for my gif"></p>
+<h1 id="faster-diagnosis-better-treatment">Faster Diagnosis, Better Treatment:</h1>
+<p><img src="/images/hca_gif.gif" alt="Alt text for my gif"></p>
+<p>For a long time, healthcare professionals have been using data science to optimize patient outcomes. The application can include but not limited to:</p>
+<ol>
+<li>predictive analytics of frequent medical event sequence;</li>
+<li>predict healthcare event/costs/readmission rate;</li>
+<li>clustering medical records, or predicting causations between medical events;</li>
+<li>Classifying medical images/videos, etc.</li>
+</ol>
+<p>Using data science allows the industry to draw actionable insights in a cost-effective way. For example, Stanford ML Group developed a model which can diagnose irregular heart rhythms from single-lead ECG signals. The model outperforms the cardiologist average on both the Sequence and Set F1 metrics. Given that more than 300 million ECGs are recorded annually, the diagnosis can save professionals considerable and decrease the number of misdiagnoes. <a href="https://arxiv.org/abs/1707.01836#">Cardiologist-Level Arrhythmia Detection with Convolutional Neural Network</a>
+<a href="https://stanfordmlgroup.github.io/projects/ecg/"><img src="/images/hca1.png" alt="Alt text for my gif"></a></p>
+<h1 id="descriptive-analytics">Descriptive Analytics</h1>
+<p>Descriptive analytics can be applied when we want to find out what happened in the past through aggregation.</p>
+<h2 id="example-1---cms">Example 1 - CMS<a class="anchor" href="#example-1---cms">#</a></h2>
+<p>I will use the CMS 2008-2010 Data Entrepreneurs' Synthetic Public File <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF">(DE-SynPUF)</a> as an example. The DE-SynPUF was created for providing a realistic set of claims data in the public domain while protected medicare beneficiaries&rsquo;s health information. The DE-SynPUB contains five types of data: Beneficiary Summary, Inpatient Claims, Outpatient Claims, Carrier Claims and Prescription Drug Events.</p>
+<p>I loaded the data to MySQL workbench already. In order to find out the number of patients who have both depression and Alzheimer, I will write a SQL query to extract information.</p>
+<pre><code class="language-json">SELECT count(*) as CountNums
+FROM beneficiarySummary_sample1
+WHERE SP_ALZHDMTA='yes'
+AND SP_DEPRESSN='yes'
+</code></pre>
+<h2 id="example-2---umls">Example 2 - UMLS<a class="anchor" href="#example-2---umls">#</a></h2>
+<p>Take Unified Medical Language System<a href="https://www.nlm.nih.gov/research/umls/implementation_resources/query_diagrams/er3.html">(UMLS)</a> as another example. UMLS is a set of files and software that brings together many health and biomedical vocabularies and standards to enable interoperability between computer systems. Here are more <a href="https://www.nlm.nih.gov/research/umls/index.html">usage</a> in UMLS.</p>
+<p>For the example in UMLS, I would like to find out possible treatments for an ALS(Amyotrophic Lateral Sclerosis) patient under same treatment concept. For an example like this, I need to go through the <a href="https://www.nlm.nih.gov/research/umls/implementation_resources/query_diagrams/er3.html">UMLS database query diagrams</a>, which shows all information associated with a particular source concept.</p>
+<pre><code class="language-json">SELECT distinct CUI, STR from umls.mrconso 
+where str='Amyotrophic Lateral Sclerosis&quot;;
+
+[output]:C0002736
+
+SELECT distinct r.cui2, r.rela, r.cui1, min(str) as treatment_name
+FROM umls.mrrel r, umps.mrconso c
+WHERE cui=r.cui2 and r.cui1='C0002736' and r.rela like &quot;%treat%&quot; 
+AND c.lat=&quot;eng&quot;
+group by r.cui2, r.rela, r.cui1;
+</code></pre>
+<p>[output]:
+<img src="/images/hca2.png" alt="Alt text for my gif"></p>
+<p>The first step shows me all the concepts under ALS inside umls.mrconso table. The second steps involved searching for relationship, in which I went through the umls.mrrel table and assigned the relationship(rela) to &ldquo;%treat%&rdquo;. The result shows the unique concept(cui2) which treats ALS(cui1).</p>
+<h1 id="predictive-analytics">Predictive Analytics</h1>
+<p>Unlike descriptive analysis, which informed historical events, predictive analytics allows us to predict what will happen in the future. In predictive analytics, machine learning/artificial intelligence techniques will be used to train models to predict future events.</p>
+<p><a href="http://localhost:1313/blog/healthcare/"><img src="/images/hca3.png" alt="Alt text for my gif"></a></p>
+<p>For example, I would like to predict whether a patient will develop depression. There are multiple models can be used in order solve this, I will demonstrate using Decision Tree:</p>
+<pre><code class="language-json">from sklearn.tree import DecisionTreeClassifier 
+decision_tree = DecisionTreeClassifier(max_leaf_nodes=50, criterion='entropy', random_state=0) 
+decision_tree.fit(X_train, y_train)
+predict_dt=decision_tree.predict(X_test)
+decision_tree_score=decision_tree.score(X_test, y_test) * 100 
+decision_tree_score
+
+[output]:69.33333333333334
+</code></pre>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">class</th>
+<th style="text-align:center">Precision</th>
+<th style="text-align:right">recall</th>
+<th style="text-align:right">f1-score</th>
+<th style="text-align:right">support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">0</td>
+<td style="text-align:center">0.72</td>
+<td style="text-align:right">0.61</td>
+<td style="text-align:right">0.66</td>
+<td style="text-align:right">440</td>
+</tr>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:center">0.67</td>
+<td style="text-align:right">0.77</td>
+<td style="text-align:right">0.72</td>
+<td style="text-align:right">460</td>
+</tr>
+</tbody>
+</table>
+<h1 id="conclusion">Conclusion</h1>
+<p>This post quickly introduced two analytics methods. Descriptive analytics is used for analyzing historical events and understand the past. Predictive analytics is applied for predicting future trends and prevention. Both analytics methods are vitally important not only for health professional, but also for insurance companies, medical companies, suppliers, etc.</p>
 
 
               
@@ -129,15 +208,22 @@
 
 <ul class="tags__list">
     
-    </ul>
+    <li class="tag__item">
+        <a class="tag__link" href="/tags/concept/">concept</a>
+    </li></ul>
 
  <div class="pagination">
   
+    <a class="pagination__item" href="/blog/kfold/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">What is K-fold Cross Validation</span>
+    </a>
+  
 
   
-    <a class="pagination__item" href="/blog/uniqlo_sales_analysis/">
+    <a class="pagination__item" href="/blog/eda/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >Retail Data Analysis - Python</a>
+      <span class="pagination__title" >What is Exploratory Data Analysis (EDA)</a>
     </a>
   
 </div>

@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 01 Oct 2020 21:56:06 -0500</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title> What is Dimensionality Reduction - PCA</title>
+      <link>/blog/pca/</link>
+      <pubDate>Thu, 01 Oct 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/blog/pca/</guid>
+      <description>Today, I am going to talk about Feature Engineer, and more specifically, PCA which is one technique in feature extraction.
+Feature Engineer is an important part of machine learning. Like a quote showed above, how your algorithm does, highly depends on your data. Feature engineer include feature selection and feature extraction. We are only going to focus on feature extraction&amp;mdash;PCA here.
+What is PCA and why we are doing it?💭 PCA refers to Principal Component Analysis.</description>
+    </item>
+    
+    <item>
       <title>Baby Product Analysis - Excel</title>
       <link>/blog/baby_product/</link>
       <pubDate>Thu, 01 Oct 2020 22:39:59 -0500</pubDate>
@@ -15,17 +26,6 @@
       <description>Introduction: Buying pattern refers to the characteristics way of customer’s buying in terms of product category, frequency, etc. It’s important for business to know customer’s buying pattern in order to make better marketing strategy to meet the need of their target consumers.
 This post will analyze purchase pattern based on baby product dataset obtained from Tianchi, a sourcing company which hosts big data competitions in various industries.
 Dataset Summary: This Mum_Baby dataset contains 952 baby’s information including user_id, birthday, gender which were provided by customers.</description>
-    </item>
-    
-    <item>
-      <title>Dimensionality Reduction - PCA</title>
-      <link>/blog/pca/</link>
-      <pubDate>Thu, 01 Oct 2020 22:39:59 -0500</pubDate>
-      
-      <guid>/blog/pca/</guid>
-      <description>Today, I am going to talk about Feature Engineer, and more specifically, PCA which is one technique in feature extraction.
-Feature Engineer is an important part of machine learning. Like a quote showed above, how your algorithm does, highly depends on your data. Feature engineer include feature selection and feature extraction. We are only going to focus on feature extraction&amp;mdash;PCA here.
-What is PCA and why we are doing it?💭 PCA refers to Principal Component Analysis.</description>
     </item>
     
     <item>
@@ -39,18 +39,6 @@ Step 1: acquire a domain: I got my domain name from Google Domains. Depends on d
     </item>
     
     <item>
-      <title>Exploratory Data Analysis (EDA)</title>
-      <link>/blog/eda/</link>
-      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
-      
-      <guid>/blog/eda/</guid>
-      <description>Understanding data is one of the most important steps for anyone starting out a machine learning project. Exploratory Data Analysis is one of the ways to do that. “EDA is performed in order to define and refine the selection of feature variables that will be used for machine learning”. This post briefly talks about EDA and Bivariate Analysis.
-The post will cover:
-What is EDA and Bivariate Analysis
-Why it is important</description>
-    </item>
-    
-    <item>
       <title>Framingham Heart Disease Study - Logistic Regression</title>
       <link>/blog/chd/</link>
       <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
@@ -58,16 +46,6 @@ Why it is important</description>
       <guid>/blog/chd/</guid>
       <description>Introduction Coronary heart disease (CHD) is one of the most common types of heart disease in America. Making early prognosis can help high risk potential patients to change lifesyle and reduce the chance of getting it. The objective of the project is to determine the risk factors for predicting the probability of developing CHD.
 The ‘framingham’ dataset provides information whether the participants developed Coronary Heart Disease (CHD) after ten years of the study.</description>
-    </item>
-    
-    <item>
-      <title>K-fold Cross Validation</title>
-      <link>/blog/kfold/</link>
-      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
-      
-      <guid>/blog/kfold/</guid>
-      <description>In machine learning, we usually split the data into training and testing sets so that we can evaluate the model(s). This method, however, is not reliable because the accuracy of your model is largely depend on what you got! Accuracy obtained from one test set can be very different than another test set. This post will talk about K-fold Cross Validation.
-The Validation Set Approach:❓ Usually before we train a model, we spilt the data into training and test set.</description>
     </item>
     
     <item>
@@ -81,12 +59,35 @@ About UNIQLO: Uniqlo is one of the brands in Fast Retailing, a global company th
     </item>
     
     <item>
-      <title>Tidy data</title>
+      <title>What is Exploratory Data Analysis (EDA)</title>
+      <link>/blog/eda/</link>
+      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/eda/</guid>
+      <description>Understanding data is one of the most important steps for anyone starting out a machine learning project. Exploratory Data Analysis is one of the ways to do that. “EDA is performed in order to define and refine the selection of feature variables that will be used for machine learning”. This post briefly talks about EDA and Bivariate Analysis.
+The post will cover:
+What is EDA and Bivariate Analysis
+Why it is important</description>
+    </item>
+    
+    <item>
+      <title>What is healthcare analytics</title>
       <link>/blog/healthcare/</link>
       <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
       
       <guid>/blog/healthcare/</guid>
-      <description></description>
+      <description>Faster Diagnosis, Better Treatment: For a long time, healthcare professionals have been using data science to optimize patient outcomes. The application can include but not limited to:
+ predictive analytics of frequent medical event sequence; predict healthcare event/costs/readmission rate; clustering medical records, or predicting causations between medical events; Classifying medical images/videos, etc.  Using data science allows the industry to draw actionable insights in a cost-effective way. For example, Stanford ML Group developed a model which can diagnose irregular heart rhythms from single-lead ECG signals.</description>
+    </item>
+    
+    <item>
+      <title>What is K-fold Cross Validation</title>
+      <link>/blog/kfold/</link>
+      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/kfold/</guid>
+      <description>In machine learning, we usually split the data into training and testing sets so that we can evaluate the model(s). This method, however, is not reliable because the accuracy of your model is largely depend on what you got! Accuracy obtained from one test set can be very different than another test set. This post will talk about K-fold Cross Validation.
+The Validation Set Approach:❓ Usually before we train a model, we spilt the data into training and test set.</description>
     </item>
     
   </channel>

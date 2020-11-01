@@ -8,6 +8,11 @@
   </url>
   
   <url>
+    <loc>/blog/pca/</loc>
+    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/baby_product/</loc>
     <lastmod>2020-10-01T22:39:59-05:00</lastmod>
   </url>
@@ -19,11 +24,6 @@
   
   <url>
     <loc>/tags/data-visualization/</loc>
-    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/pca/</loc>
     <lastmod>2020-10-01T22:39:59-05:00</lastmod>
   </url>
   
@@ -48,17 +48,7 @@
   </url>
   
   <url>
-    <loc>/blog/eda/</loc>
-    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/chd/</loc>
-    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/kfold/</loc>
     <lastmod>2020-10-01T21:56:06-05:00</lastmod>
   </url>
   
@@ -73,7 +63,17 @@
   </url>
   
   <url>
+    <loc>/blog/eda/</loc>
+    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/healthcare/</loc>
+    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/kfold/</loc>
     <lastmod>2020-10-01T21:56:06-05:00</lastmod>
   </url>
   
@@ -86,11 +86,11 @@
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>/coding_practice/</loc>
   </url>
   
   <url>
-    <loc>/practice/</loc>
+    <loc>/contact/</loc>
   </url>
   
 </urlset>

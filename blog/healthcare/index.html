@@ -2,7 +2,7 @@
 <html lang="">
 
 <head>
-  <title>What is healthcare analytics | </title>
+  <title>Descriptive and predictive analysis in healthcare | </title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -48,8 +48,8 @@
             "@id": ""
       },
       "articleSection" : "blog",
-      "name" : "What is healthcare analytics",
-      "headline" : "What is healthcare analytics",
+      "name" : "Descriptive and predictive analysis in healthcare",
+      "headline" : "Descriptive and predictive analysis in healthcare",
       "description" : "",
       "inLanguage" : "en-US",
       "author" : "",
@@ -58,10 +58,10 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2020",
-      "datePublished": "2020-10-01 21:56:06 -0500 CDT",
-      "dateModified" : "2020-10-01 21:56:06 -0500 CDT",
+      "datePublished": "2020-11-01 10:56:06 -0500 -0500",
+      "dateModified" : "2020-11-01 10:56:06 -0500 -0500",
       "url" : "\/blog\/healthcare\/",
-      "wordCount" : "572",
+      "wordCount" : "573",
       "keywords" : ["healthcare analytics", "Blog"]
     }
   
@@ -115,12 +115,12 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">What is healthcare analytics</h1>
-            <time datetime="2020-10-01 21:56:06 -0500 CDT" class="post__date">Oct 1 2020</time> 
+            <h1 id="post__title">Descriptive and predictive analysis in healthcare</h1>
+            <time datetime="2020-11-01 10:56:06 -0500 -0500" class="post__date">Nov 1 2020</time> 
           </header>
           <article class="post__content">
               
-<h1 id="faster-diagnosis-better-treatment">Faster Diagnosis, Better Treatment:</h1>
+<h2 id="faster-diagnosis-better-treatment">Faster Diagnosis, Better Treatment:<a class="anchor" href="#faster-diagnosis-better-treatment">#</a></h2>
 <p><img src="/images/hca_gif.gif" alt="Alt text for my gif"></p>
 <p>For a long time, healthcare professionals have been using data science to optimize patient outcomes. The application can include but not limited to:</p>
 <ol>
@@ -129,12 +129,12 @@
 <li>clustering medical records, or predicting causations between medical events;</li>
 <li>Classifying medical images/videos, etc.</li>
 </ol>
-<p>Using data science allows the industry to draw actionable insights in a cost-effective way. For example, Stanford ML Group developed a model which can diagnose irregular heart rhythms from single-lead ECG signals. The model outperforms the cardiologist average on both the Sequence and Set F1 metrics. Given that more than 300 million ECGs are recorded annually, the diagnosis can save professionals considerable and decrease the number of misdiagnoes. <a href="https://arxiv.org/abs/1707.01836#">Cardiologist-Level Arrhythmia Detection with Convolutional Neural Network</a>
+<p>Using data science allows the industry to draw actionable insights in a cost-effective way. For example, Stanford ML Group developed a model which can diagnose irregular heart rhythms from single-lead ECG signals. The model outperforms the cardiologist average on both the Sequence and Set F1 metrics. Given that more than 300 million ECGs are recorded annually, the diagnosis can save professionals considerable time and decrease the number of misdiagnose. <a href="https://arxiv.org/abs/1707.01836#">Cardiologist-Level Arrhythmia Detection with Convolutional Neural Network</a>
 <a href="https://stanfordmlgroup.github.io/projects/ecg/"><img src="/images/hca1.png" alt="Alt text for my gif"></a></p>
-<h1 id="descriptive-analytics">Descriptive Analytics</h1>
+<h2 id="descriptive-analytics">Descriptive Analytics<a class="anchor" href="#descriptive-analytics">#</a></h2>
 <p>Descriptive analytics can be applied when we want to find out what happened in the past through aggregation.</p>
-<h2 id="example-1---cms">Example 1 - CMS<a class="anchor" href="#example-1---cms">#</a></h2>
-<p>I will use the CMS 2008-2010 Data Entrepreneurs' Synthetic Public File <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF">(DE-SynPUF)</a> as an example. The DE-SynPUF was created for providing a realistic set of claims data in the public domain while protected medicare beneficiaries&rsquo;s health information. The DE-SynPUB contains five types of data: Beneficiary Summary, Inpatient Claims, Outpatient Claims, Carrier Claims and Prescription Drug Events.</p>
+<h3 id="example-1---cms">Example 1 - CMS<a class="anchor" href="#example-1---cms">#</a></h3>
+<p>I will use the CMS 2008-2010 Data Entrepreneurs' Synthetic Public File <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Downloadable-Public-Use-Files/SynPUFs/DE_Syn_PUF">(DE-SynPUF)</a> as an example. The DE-SynPUF was created for providing a realistic set of claims data in the public domain while protected Medicare beneficiaries' health information. The DE-SynPUB contains five types of data: Beneficiary Summary, Inpatient Claims, Outpatient Claims, Carrier Claims and Prescription Drug Events.</p>
 <p>I loaded the data to MySQL workbench already. In order to find out the number of patients who have both depression and Alzheimer, I will write a SQL query to extract information.</p>
 <pre><code class="language-json">SELECT count(*) as CountNums
 FROM beneficiarySummary_sample1
@@ -158,7 +158,7 @@ group by r.cui2, r.rela, r.cui1;
 <p>[output]:
 <img src="/images/hca2.png" alt="Alt text for my gif"></p>
 <p>The first step shows me all the concepts under ALS inside umls.mrconso table. The second steps involved searching for relationship, in which I went through the umls.mrrel table and assigned the relationship(rela) to &ldquo;%treat%&rdquo;. The result shows the unique concept(cui2) which treats ALS(cui1).</p>
-<h1 id="predictive-analytics">Predictive Analytics</h1>
+<h2 id="predictive-analytics">Predictive Analytics<a class="anchor" href="#predictive-analytics">#</a></h2>
 <p>Unlike descriptive analysis, which informed historical events, predictive analytics allows us to predict what will happen in the future. In predictive analytics, machine learning/artificial intelligence techniques will be used to train models to predict future events.</p>
 <p><a href="http://localhost:1313/blog/healthcare/"><img src="/images/hca3.png" alt="Alt text for my gif"></a></p>
 <p>For example, I would like to predict whether a patient will develop depression. There are multiple models can be used in order solve this, I will demonstrate using Decision Tree:</p>
@@ -198,7 +198,7 @@ decision_tree_score
 </tr>
 </tbody>
 </table>
-<h1 id="conclusion">Conclusion</h1>
+<h2 id="conclusion">Conclusion<a class="anchor" href="#conclusion">#</a></h2>
 <p>This post quickly introduced two analytics methods. Descriptive analytics is used for analyzing historical events and understand the past. Predictive analytics is applied for predicting future trends and prevention. Both analytics methods are vitally important not only for health professional, but also for insurance companies, medical companies, suppliers, etc.</p>
 
 
@@ -214,17 +214,12 @@ decision_tree_score
 
  <div class="pagination">
   
-    <a class="pagination__item" href="/blog/kfold/">
+    <a class="pagination__item" href="/blog/custom_domain/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">What is K-fold Cross Validation</span>
+        <span class="pagination__title">How to add a custom domain to your hugo site?</span>
     </a>
   
 
-  
-    <a class="pagination__item" href="/blog/eda/">
-      <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >What is Exploratory Data Analysis (EDA)</a>
-    </a>
   
 </div>
 

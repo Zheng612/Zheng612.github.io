@@ -5,11 +5,11 @@
     <link>/tags/data-visualization/</link>
     <description>Recent content in data visualization on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Oct 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Sep 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Baby Product Analysis - Excel</title>
+      <title>Analyzing baby product purchase pattern with Excel</title>
       <link>/blog/baby_product/</link>
-      <pubDate>Thu, 01 Oct 2020 22:39:59 -0500</pubDate>
+      <pubDate>Tue, 01 Sep 2020 22:39:59 -0500</pubDate>
       
       <guid>/blog/baby_product/</guid>
       <description>Introduction: Buying pattern refers to the characteristics way of customer’s buying in terms of product category, frequency, etc. It’s important for business to know customer’s buying pattern in order to make better marketing strategy to meet the need of their target consumers.
@@ -18,9 +18,9 @@ Dataset Summary: This Mum_Baby dataset contains 952 baby’s information includi
     </item>
     
     <item>
-      <title>Retail Data Analysis - Python</title>
+      <title>Analyzing UNIQLO sales trend with Python</title>
       <link>/blog/uniqlo_sales_analysis/</link>
-      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      <pubDate>Sat, 25 Jul 2020 21:56:06 -0500</pubDate>
       
       <guid>/blog/uniqlo_sales_analysis/</guid>
       <description>Sales analysis is a way to evaluate the performance of sales by analyzing sales data. In order to improve sales effectiveness and make smart decisions, it’s important to conduct sales analysis regularly. Today, I decided to share one of the sales analysis projects for UNIQLO sales data.

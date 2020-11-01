@@ -5,11 +5,11 @@
     <link>/tags/machine-leanring/</link>
     <description>Recent content in machine leanring on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Oct 2020 21:56:06 -0500</lastBuildDate><atom:link href="/tags/machine-leanring/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Oct 2020 21:56:06 -0500</lastBuildDate><atom:link href="/tags/machine-leanring/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Framingham Heart Disease Study - Logistic Regression</title>
+      <title>Framingham heart disease study with machine learning</title>
       <link>/blog/chd/</link>
-      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      <pubDate>Sat, 10 Oct 2020 21:56:06 -0500</pubDate>
       
       <guid>/blog/chd/</guid>
       <description>Introduction Coronary heart disease (CHD) is one of the most common types of heart disease in America. Making early prognosis can help high risk potential patients to change lifesyle and reduce the chance of getting it. The objective of the project is to determine the risk factors for predicting the probability of developing CHD.

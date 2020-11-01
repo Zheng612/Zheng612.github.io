@@ -5,11 +5,11 @@
     <link>/tags/hugo-site/</link>
     <description>Recent content in hugo site on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Oct 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/hugo-site/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Oct 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/hugo-site/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to add a custom domain to your hugo site?</title>
       <link>/blog/custom_domain/</link>
-      <pubDate>Thu, 01 Oct 2020 22:39:59 -0500</pubDate>
+      <pubDate>Sun, 25 Oct 2020 22:39:59 -0500</pubDate>
       
       <guid>/blog/custom_domain/</guid>
       <description>This post introduce how to configure an apex domain to your hugo site. A lot of people prefer to have a custom domain instead &amp;ldquo;http:XXXX.github.io&amp;rdquo;. Let&amp;rsquo;s go through the steps to add your domain name to your hugo site:

@@ -4,61 +4,46 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/pca/</loc>
-    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/baby_product/</loc>
-    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
+    <lastmod>2020-11-01T10:56:06-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/concept/</loc>
-    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
+    <lastmod>2020-11-01T10:56:06-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-visualization/</loc>
-    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/custom_domain/</loc>
-    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/hugo-site/</loc>
-    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
+    <loc>/blog/healthcare/</loc>
+    <lastmod>2020-11-01T10:56:06-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-10-01T22:39:59-05:00</lastmod>
+    <lastmod>2020-11-01T10:56:06-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+    <loc>/blog/custom_domain/</loc>
+    <lastmod>2020-10-25T22:39:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hugo-site/</loc>
+    <lastmod>2020-10-25T22:39:59-05:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/chd/</loc>
-    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+    <lastmod>2020-10-10T21:56:06-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/machine-leanring/</loc>
-    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+    <lastmod>2020-10-10T21:56:06-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/uniqlo_sales_analysis/</loc>
+    <loc>/blog/</loc>
     <lastmod>2020-10-01T21:56:06-05:00</lastmod>
   </url>
   
@@ -68,13 +53,28 @@
   </url>
   
   <url>
-    <loc>/blog/healthcare/</loc>
-    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+    <loc>/blog/baby_product/</loc>
+    <lastmod>2020-09-01T22:39:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-visualization/</loc>
+    <lastmod>2020-09-01T22:39:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/uniqlo_sales_analysis/</loc>
+    <lastmod>2020-07-25T21:56:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/pca/</loc>
+    <lastmod>2020-04-05T22:39:59-05:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/kfold/</loc>
-    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
+    <lastmod>2020-04-01T21:56:06-05:00</lastmod>
   </url>
   
   <url>

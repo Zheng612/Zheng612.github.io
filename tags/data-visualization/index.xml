@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 01 Sep 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/data-visualization/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Analyzing baby product purchase pattern with Excel</title>
+      <title>📘 Analyzing baby product purchase pattern with Excel</title>
       <link>/blog/baby_product/</link>
       <pubDate>Tue, 01 Sep 2020 22:39:59 -0500</pubDate>
       
@@ -18,7 +18,7 @@ Dataset Summary: This Mum_Baby dataset contains 952 baby’s information includi
     </item>
     
     <item>
-      <title>Analyzing UNIQLO sales trend with Python</title>
+      <title>📘 Analyzing UNIQLO sales trend with Python</title>
       <link>/blog/uniqlo_sales_analysis/</link>
       <pubDate>Sat, 25 Jul 2020 21:56:06 -0500</pubDate>
       

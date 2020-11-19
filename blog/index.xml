@@ -7,16 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 01 Oct 2020 21:56:06 -0500</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Association rule mining with Python</title>
-      <link>/blog/association-rule/</link>
-      <pubDate>Wed, 18 Nov 2020 21:56:06 -0500</pubDate>
-      
-      <guid>/blog/association-rule/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Descriptive and predictive analysis in healthcare</title>
+      <title>💡 what is descriptive and predictive analysis in healthcare?</title>
       <link>/blog/healthcare/</link>
       <pubDate>Sun, 01 Nov 2020 10:56:06 -0500</pubDate>
       
@@ -26,7 +17,7 @@
     </item>
     
     <item>
-      <title>How to add a custom domain to your hugo site?</title>
+      <title>🔖 How to add a custom domain to your hugo site?</title>
       <link>/blog/custom_domain/</link>
       <pubDate>Sun, 25 Oct 2020 22:39:59 -0500</pubDate>
       
@@ -36,7 +27,7 @@ Step 1: acquire a domain: I got my domain name from Google Domains. Depends on d
     </item>
     
     <item>
-      <title>Framingham heart disease study with machine learning</title>
+      <title>📘 Heart disease prediction</title>
       <link>/blog/chd/</link>
       <pubDate>Sat, 10 Oct 2020 21:56:06 -0500</pubDate>
       
@@ -46,7 +37,7 @@ The ‘framingham’ dataset provides information whether the participants devel
     </item>
     
     <item>
-      <title>Exploratory data analysis</title>
+      <title>💡 what is exploratory data analysis?</title>
       <link>/blog/eda/</link>
       <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
       
@@ -58,7 +49,7 @@ Why it is important</description>
     </item>
     
     <item>
-      <title>Analyzing baby product purchase pattern with Excel</title>
+      <title>📘 Analyzing baby product purchase pattern with Excel</title>
       <link>/blog/baby_product/</link>
       <pubDate>Tue, 01 Sep 2020 22:39:59 -0500</pubDate>
       
@@ -69,7 +60,7 @@ Dataset Summary: This Mum_Baby dataset contains 952 baby’s information includi
     </item>
     
     <item>
-      <title>Analyzing UNIQLO sales trend with Python</title>
+      <title>📘 Analyzing UNIQLO sales trend with Python</title>
       <link>/blog/uniqlo_sales_analysis/</link>
       <pubDate>Sat, 25 Jul 2020 21:56:06 -0500</pubDate>
       
@@ -79,7 +70,7 @@ About UNIQLO: Uniqlo is one of the brands in Fast Retailing, a global company th
     </item>
     
     <item>
-      <title>Dimensionality Reduction</title>
+      <title>💡 what is dimensionality reduction?</title>
       <link>/blog/pca/</link>
       <pubDate>Sun, 05 Apr 2020 22:39:59 -0500</pubDate>
       
@@ -90,7 +81,7 @@ What is PCA and why we are doing it?💭 PCA refers to Principal Component Analy
     </item>
     
     <item>
-      <title>K-fold Cross Validation</title>
+      <title>💡 what is k-fold cross validation?</title>
       <link>/blog/kfold/</link>
       <pubDate>Wed, 01 Apr 2020 21:56:06 -0500</pubDate>
       

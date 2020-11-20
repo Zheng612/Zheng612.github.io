@@ -2,7 +2,7 @@
 <html lang="">
 
 <head>
-  <title>Association rule mining with Python | </title>
+  <title>💡 Association rule mining | </title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
@@ -31,7 +31,7 @@
     <link type="text/css" rel="stylesheet" href="/css/post.min.8a92e8cd796cd68e81df831649d4a7ddee5f9c2504a95f5b93ef40764b3eaab3.css" integrity="sha256-ipLozXls1o6B34MWSdSn3e5fnCUEqV9bk&#43;9Adks&#43;qrM="/>
   
     
-    <link type="text/css" rel="stylesheet" href="/css/custom.min.331a1174937eef97c55572e46b242decc35c43b1553ed9cdfb5a4a4c9dd30480.css" integrity="sha256-MxoRdJN&#43;75fFVXLkayQt7MNcQ7FVPtnN&#43;1pKTJ3TBIA="/>
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.445d2c3db5a9b9fa38e9de7ebb59566c83ae827174902a293925b67bdaf1c589.css" integrity="sha256-RF0sPbWpufo46d5&#43;u1lWbIOugnF0kCopOSW2e9rxxYk="/>
   
   
    
@@ -48,8 +48,8 @@
             "@id": ""
       },
       "articleSection" : "blog",
-      "name" : "Association rule mining with Python",
-      "headline" : "Association rule mining with Python",
+      "name" : "💡 Association rule mining",
+      "headline" : "💡 Association rule mining",
       "description" : "",
       "inLanguage" : "en-US",
       "author" : "",
@@ -61,7 +61,7 @@
       "datePublished": "2020-11-18 21:56:06 -0500 -0500",
       "dateModified" : "2020-11-18 21:56:06 -0500 -0500",
       "url" : "\/blog\/association-rule\/",
-      "wordCount" : "0",
+      "wordCount" : "580",
       "keywords" : ["association rule healthcare", "Blog"]
     }
   
@@ -115,12 +115,50 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">Association rule mining with Python</h1>
+            <h1 id="post__title">💡 Association rule mining</h1>
             <time datetime="2020-11-18 21:56:06 -0500 -0500" class="post__date">Nov 18 2020</time> 
           </header>
           <article class="post__content">
               
-<p><img src="/images/uniql.jpeg" alt="Alt text for my gif"></p>
+<p><img src="/images/disease.jpeg" alt="Alt text for my gif"></p>
+<h2 id="association-rule-mining">Association rule mining<a class="anchor" href="#association-rule-mining">#</a></h2>
+<p>Last time, we talked about <a href="http://jiaxinzheng.com/blog/healthcare/">healthcare analytics</a> using predictive or descriptive methods. This post will talk about association rule mining, which aims to find co-occurrences of disease carried by a patient using the health care repository.</p>
+<p>The research has proved that getting one disease can lead to one or more several disease. For example, a patient with diabetes is more likely to have other conditions, such as hypertension, and increase the risk of heart disease. Association rule mining is one of the data mining techniques that predict correlation of disease carried by patients.</p>
+<p>In <a href="https://arxiv.org/abs/1401.2571">Association Rules Mining Based Clinical Observations</a>, the paper discussed a proposed architecture of Clinical State Correlation Prediction(CSCP) and Online Transaction Processing(OLTP). When a patient goes hospital, he must fill up  forms and information. These data are stored in OLTP system. Later on, the CSCP will import those records to generate association among disease using data mining techniques.</p>
+<p><img src="/images/oltpcscp.png" alt="Alt text for my gif"></p>
+<h2 id="apriori-algorithm">Apriori Algorithm<a class="anchor" href="#apriori-algorithm">#</a></h2>
+<h3 id="1-support">1. Support<a class="anchor" href="#1-support">#</a></h3>
+<p>Support represents the occurrences of a disease. For example, amount 100 people, there are 80 diabetes patients. Support of diabetes can be calculated as</p>
+<pre><code>Support(diabetes)=diabetes/total: 80/100=0.8
+</code></pre>
+<h3 id="2-support-ratio">2. Support ratio<a class="anchor" href="#2-support-ratio">#</a></h3>
+<p>Support ratio represent how frequently two disease happen together. When calculating the support ratio, the small support will always be numerator. For example, the support of diabetes is 0.8, the support of heart disease is 0.7.</p>
+<pre><code>Support Ratio(diabetes and heart disease)= 0.7/0.8=0.875
+</code></pre>
+<h3 id="3-confidence">3. Confidence:<a class="anchor" href="#3-confidence">#</a></h3>
+<p>Confidence represents the occurrence of disease A lead to disease B. The numerator is the occurrence of A and B, the denominator is the support of antecedent disease(A). For example, among total 100 people, 80 people have diabetes, 70 people have heart disease. I would like to calculate the confidence of diabetes lead to heart disease. Confidence(A&mdash;&gt;B):</p>
+<pre><code>Confidence(diabetes---&gt;heart disease)
+=support(diabetes and heart disease)/support(diabetes)=0.5/0.8=0.625
+</code></pre>
+<p>Note: when calculate confidence, there must be a antecedents and a consequents.</p>
+<h3 id="4-lift">4. Lift:<a class="anchor" href="#4-lift">#</a></h3>
+<p>Lift represent how strong an association rule is. It is calculated as confidence divided by support of consequents. For example, I would like to know how strong the association rule of diabetes&mdash;&gt;heart disease.</p>
+<pre><code>support(heart disease)=70/100=0.7
+Lift=0.625/0.7=0.89
+</code></pre>
+<p>As we can see, the lift(0.89) is smaller than 1. This is due to the confidence is smaller than the support of heart disease. Therefore, it indicates: getting diabetes reduce the risk of getting heart disease.</p>
+<pre><code>Lift&lt;1: negative correlation
+Lift&gt;1: positive correlation
+</code></pre>
+<h2 id="example-association-rule-between-alzheimer-and-cancer">Example: association rule between alzheimer and cancer<a class="anchor" href="#example-association-rule-between-alzheimer-and-cancer">#</a></h2>
+<p>Here is a example of association rule mining between Alzheimer and different types of cancer. For this example, I would like to find the lite association, which basically mean one disease lead to the other disease. I will be using the following dataset to conduct association rule mining. The two columns will be used are PID_Arry(patient id) and CAT2(disease code), where 331 represent Alzheimer and the other codes represent different types of cancer.</p>
+<p><img src="/images/ar_data.png" alt="Alt text for my gif"></p>
+<p>After data cleaning, I&rsquo;ve calculated support, SR, confidence and Lift. Let&rsquo;s sort by confidence. As shown in the picture below, the highest confidence is 1.62% between alzheimer and cancer 198. The lift score indicates that getting Alzheimer decrease the risk of getting cancer 198.
+<img src="/images/ar_conf.png" alt="Alt text for my gif"></p>
+<h2 id="conclusion">Conclusion:<a class="anchor" href="#conclusion">#</a></h2>
+<p>The recognized pattern by using association rule mining can definitely help health providers and researchers to better find disease association. By implementing the CSCP system proposed in <a href="https://arxiv.org/abs/1401.2571">Association Rules Mining Based Clinical Observations</a>, health professional will be able to identify disease faster and make better decision.</p>
+<h4 id="reference">Reference:</h4>
+<p>Rashid, M., Hoque, M., &amp; Sattar, A. (2014, January 11). Association Rules Mining Based Clinical Observations. Retrieved November 20, 2020, from <a href="https://arxiv.org/abs/1401.2571">https://arxiv.org/abs/1401.2571</a></p>
 
 
               
@@ -137,7 +175,7 @@
   
     <a class="pagination__item" href="/blog/healthcare/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">Descriptive and predictive analysis in healthcare</span>
+        <span class="pagination__title">💡 what is descriptive and predictive analysis in healthcare?</span>
     </a>
   
 

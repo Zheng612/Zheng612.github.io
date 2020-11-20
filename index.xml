@@ -5,7 +5,17 @@
     <link>/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 01 Nov 2020 10:56:06 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Nov 2020 21:56:06 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>💡 Association rule mining</title>
+      <link>/blog/association-rule/</link>
+      <pubDate>Wed, 18 Nov 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/association-rule/</guid>
+      <description>Association rule mining Last time, we talked about healthcare analytics using predictive or descriptive methods. This post will talk about association rule mining, which aims to find co-occurrences of disease carried by a patient using the health care repository.
+The research has proved that getting one disease can lead to one or more several disease. For example, a patient with diabetes is more likely to have other conditions, such as hypertension, and increase the risk of heart disease.</description>
+    </item>
+    
     <item>
       <title>💡 what is descriptive and predictive analysis in healthcare?</title>
       <link>/blog/healthcare/</link>
@@ -96,12 +106,10 @@ The Validation Set Approach:❓ Usually before we train a model, we spilt the da
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Hi there I&amp;rsquo;m a graduate student from University of St. Thomas (Class of 2021). This a hugo site hosted on Gihub. This website will include my thoughts/projects/learning journey. (Currently transferring my posts from wix&amp;hellip;)
+      <description>Halo! I&amp;rsquo;m a graduate student from University of St. Thomas (Class of 2021). This a hugo site hosted on Gihub. This website will include my thoughts/projects/learning journey.
 Things I absolute love&amp;hellip; DIY/CRAFTS
 Latin Dance
-Chihuahua
-Making Salad
-Let&amp;rsquo;s connect 🤝 💼 LinkedIn
+Let&amp;rsquo;s connect 💼 LinkedIn
 💻 GitHub</description>
     </item>
     

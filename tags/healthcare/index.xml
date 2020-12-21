@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>healthcare on </title>
+    <link>/tags/healthcare/</link>
+    <description>Recent content in healthcare on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 20 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/healthcare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Healthcare Data Sources</title>
+      <link>/blog/healtcare_data_source/</link>
+      <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/blog/healtcare_data_source/</guid>
+      <description>Introduction Healthcare analytics has gained more popularity in the recent years. Healthcare analytics includes but not limited to: biomedical image analysis, sensor data analysis, biomedical signal analysis, clinical text mining, clinical prediction models, Clinical Decision Support Systems(CDSS), fraud detection, etc.
+This post will talk about healthcare data sources, coding system, and
+1. Electronic Health Record (EHR) EHR, or electric health record is where patient&amp;rsquo;s medical histories are stored at. With EHR, patient&amp;rsquo;s medical records are easier to retrieved by health providers.</description>
+    </item>
+    
+    <item>
+      <title>Association rule mining</title>
+      <link>/blog/association-rule/</link>
+      <pubDate>Wed, 18 Nov 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/association-rule/</guid>
+      <description>Association rule mining Last time, we talked about healthcare analytics using predictive or descriptive methods. This post will talk about association rule mining, which aims to find co-occurrences of disease carried by a patient using the health care repository.
+The research has proved that getting one disease can lead to one or more several disease. For example, a patient with diabetes is more likely to have other conditions, such as hypertension, and increase the risk of heart disease.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,13 +5,40 @@
     <link>/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Nov 2020 21:56:06 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>concept</title>
       <link>/tags/concept/</link>
-      <pubDate>Wed, 18 Nov 2020 21:56:06 -0500</pubDate>
+      <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
       
       <guid>/tags/concept/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data analytics</title>
+      <link>/tags/data-analytics/</link>
+      <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/tags/data-analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>healthcare</title>
+      <link>/tags/healthcare/</link>
+      <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/tags/healthcare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data science</title>
+      <link>/tags/data-science/</link>
+      <pubDate>Wed, 18 Nov 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/tags/data-science/</guid>
       <description></description>
     </item>
     
@@ -25,20 +52,20 @@
     </item>
     
     <item>
-      <title>machine leanring</title>
-      <link>/tags/machine-leanring/</link>
+      <title>project</title>
+      <link>/tags/project/</link>
       <pubDate>Sat, 10 Oct 2020 21:56:06 -0500</pubDate>
       
-      <guid>/tags/machine-leanring/</guid>
+      <guid>/tags/project/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>data visualization</title>
-      <link>/tags/data-visualization/</link>
-      <pubDate>Tue, 01 Sep 2020 22:39:59 -0500</pubDate>
+      <title>EDA</title>
+      <link>/tags/eda/</link>
+      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
       
-      <guid>/tags/data-visualization/</guid>
+      <guid>/tags/eda/</guid>
       <description></description>
     </item>
     

@@ -1,15 +1,36 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project on </title>
+    <title>project on </title>
     <link>/tags/project/</link>
-    <description>Recent content in Project on </description>
+    <description>Recent content in project on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Oct 2020 21:56:06 -0500</lastBuildDate><atom:link href="/tags/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Oct 2020 21:56:06 -0500</lastBuildDate><atom:link href="/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Retail Data Analysis</title>
+      <title>Project: Heart disease prediction</title>
+      <link>/blog/chd/</link>
+      <pubDate>Sat, 10 Oct 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/chd/</guid>
+      <description>Introduction Coronary heart disease (CHD) is one of the most common types of heart disease in America. Making early prognosis can help high risk potential patients to change lifesyle and reduce the chance of getting it. The objective of the project is to determine the risk factors for predicting the probability of developing CHD.
+The ‘framingham’ dataset provides information whether the participants developed Coronary Heart Disease (CHD) after ten years of the study.</description>
+    </item>
+    
+    <item>
+      <title>Project: Analyzing baby product purchase pattern with Excel</title>
+      <link>/blog/baby_product/</link>
+      <pubDate>Tue, 01 Sep 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/blog/baby_product/</guid>
+      <description>Introduction: Buying pattern refers to the characteristics way of customer’s buying in terms of product category, frequency, etc. It’s important for business to know customer’s buying pattern in order to make better marketing strategy to meet the need of their target consumers.
+This post will analyze purchase pattern based on baby product dataset obtained from Tianchi, a sourcing company which hosts big data competitions in various industries.
+Dataset Summary: This Mum_Baby dataset contains 952 baby’s information including user_id, birthday, gender which were provided by customers.</description>
+    </item>
+    
+    <item>
+      <title>Project: Analyzing UNIQLO sales trend with Python</title>
       <link>/blog/uniqlo_sales_analysis/</link>
-      <pubDate>Thu, 01 Oct 2020 21:56:06 -0500</pubDate>
+      <pubDate>Sat, 25 Jul 2020 21:56:06 -0500</pubDate>
       
       <guid>/blog/uniqlo_sales_analysis/</guid>
       <description>Sales analysis is a way to evaluate the performance of sales by analyzing sales data. In order to improve sales effectiveness and make smart decisions, it’s important to conduct sales analysis regularly. Today, I decided to share one of the sales analysis projects for UNIQLO sales data.

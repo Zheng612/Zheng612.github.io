@@ -4,21 +4,41 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-11-18T21:56:06-05:00</lastmod>
+    <lastmod>2020-12-20T22:39:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/healtcare_data_source/</loc>
+    <lastmod>2020-12-20T22:39:59-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/concept/</loc>
-    <lastmod>2020-11-18T21:56:06-05:00</lastmod>
+    <lastmod>2020-12-20T22:39:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-analytics/</loc>
+    <lastmod>2020-12-20T22:39:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/healthcare/</loc>
+    <lastmod>2020-12-20T22:39:59-05:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-11-18T21:56:06-05:00</lastmod>
+    <lastmod>2020-12-20T22:39:59-05:00</lastmod>
   </url>
   
   <url>
     <loc>/blog/association-rule/</loc>
+    <lastmod>2020-11-18T21:56:06-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-science/</loc>
     <lastmod>2020-11-18T21:56:06-05:00</lastmod>
   </url>
   
@@ -28,17 +48,17 @@
   </url>
   
   <url>
-    <loc>/tags/hugo-site/</loc>
-    <lastmod>2020-10-25T22:39:59-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/custom_domain/</loc>
     <lastmod>2020-10-25T22:39:59-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/machine-leanring/</loc>
+    <loc>/tags/hugo-site/</loc>
+    <lastmod>2020-10-25T22:39:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/project/</loc>
     <lastmod>2020-10-10T21:56:06-05:00</lastmod>
   </url>
   
@@ -53,13 +73,13 @@
   </url>
   
   <url>
-    <loc>/blog/eda/</loc>
+    <loc>/tags/eda/</loc>
     <lastmod>2020-10-01T21:56:06-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/data-visualization/</loc>
-    <lastmod>2020-09-01T22:39:59-05:00</lastmod>
+    <loc>/blog/eda/</loc>
+    <lastmod>2020-10-01T21:56:06-05:00</lastmod>
   </url>
   
   <url>

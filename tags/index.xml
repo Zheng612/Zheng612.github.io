@@ -5,20 +5,20 @@
     <link>/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>concept</title>
-      <link>/tags/concept/</link>
-      <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
+      <title>CDSS</title>
+      <link>/tags/cdss/</link>
+      <pubDate>Mon, 21 Dec 2020 22:39:59 -0500</pubDate>
       
-      <guid>/tags/concept/</guid>
+      <guid>/tags/cdss/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data analytics</title>
       <link>/tags/data-analytics/</link>
-      <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
+      <pubDate>Mon, 21 Dec 2020 22:39:59 -0500</pubDate>
       
       <guid>/tags/data-analytics/</guid>
       <description></description>
@@ -27,9 +27,18 @@
     <item>
       <title>healthcare</title>
       <link>/tags/healthcare/</link>
-      <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
+      <pubDate>Mon, 21 Dec 2020 22:39:59 -0500</pubDate>
       
       <guid>/tags/healthcare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>concept</title>
+      <link>/tags/concept/</link>
+      <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/tags/concept/</guid>
       <description></description>
     </item>
     

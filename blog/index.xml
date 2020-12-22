@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 01 Oct 2020 21:56:06 -0500</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>2. Clinical Decision Systems(CDSS)</title>
+      <link>/blog/healtcare_/</link>
+      <pubDate>Mon, 21 Dec 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/blog/healtcare_/</guid>
+      <description>Introduction Last time, we talked about data sources and coding system. Electronic Health Record system is where the patient&amp;rsquo;s records being stored. Different coding system(ICD-9, ICD-10, SNOWMED-CT, etc) are being used to ensure consistency and communication. This post will talk about Clinical Decision Support System(CDSS), a computer-based programs that analyzes data from EHR.
+Clinical Decision Support System(CDSS) Clinical Decision Support System is used for assisting patient-related decision making process. It can effectively determine the optimal treatment, estimating clinical and financial outcomes of different treatment.</description>
+    </item>
+    
+    <item>
       <title>1. Healthcare Data Sources</title>
       <link>/blog/healtcare_data_source/</link>
       <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>

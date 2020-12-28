@@ -5,26 +5,45 @@
     <link>/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2. Clinical Decision Systems(CDSS)</title>
-      <link>/blog/healtcare_/</link>
+      <title>3. Project: Discover hidden diseases topics with LDA</title>
+      <link>/blog/3.-lda/</link>
+      <pubDate>Sun, 27 Dec 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/blog/3.-lda/</guid>
+      <description>Introduction Topic modeling for analyzing healthcare-related content has been used extensively. Latent Dirichlet Allocation(LDA) is one of the most famous topic modeling methods. LDA can help to discover hidden topics in document collections. In healthcare, it can be used for searching hidden disease topics.
+For example, Prier et al.(2012) used LDA to identify several topics from health-related tweets, and found out that twitter users typically discussed strategies to quit smoking and recover from smoking addiction.</description>
+    </item>
+    
+    <item>
+      <title>2. Clinical Decision Support Systems(CDSS)</title>
+      <link>/blog/2.-healtcare_cdss/</link>
       <pubDate>Mon, 21 Dec 2020 22:39:59 -0500</pubDate>
       
-      <guid>/blog/healtcare_/</guid>
+      <guid>/blog/2.-healtcare_cdss/</guid>
       <description>Introduction Last time, we talked about data sources and coding system. Electronic Health Record system is where the patient&amp;rsquo;s records being stored. Different coding system(ICD-9, ICD-10, SNOWMED-CT, etc) are being used to ensure consistency and communication. This post will talk about Clinical Decision Support System(CDSS), a computer-based programs that analyzes data from EHR.
 Clinical Decision Support System(CDSS) Clinical Decision Support System is used for assisting patient-related decision making process. It can effectively determine the optimal treatment, estimating clinical and financial outcomes of different treatment.</description>
     </item>
     
     <item>
       <title>1. Healthcare Data Sources</title>
-      <link>/blog/healtcare_data_source/</link>
+      <link>/blog/1.-healtcare_data_source/</link>
       <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
       
-      <guid>/blog/healtcare_data_source/</guid>
+      <guid>/blog/1.-healtcare_data_source/</guid>
       <description>Introduction Healthcare analytics has gained more popularity in the recent years. Healthcare analytics includes but not limited to: biomedical image analysis, sensor data analysis, biomedical signal analysis, clinical text mining, clinical prediction models, Clinical Decision Support Systems(CDSS), fraud detection, etc.
 This post will talk about healthcare data sources, coding system, and
 1. Electronic Health Record (EHR) EHR, or electric health record is where patient&amp;rsquo;s medical histories are stored at. With EHR, patient&amp;rsquo;s medical records are easier to retrieved by health providers.</description>
+    </item>
+    
+    <item>
+      <title>Pandas</title>
+      <link>/blog/pandas/</link>
+      <pubDate>Sun, 20 Dec 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/pandas/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -127,10 +146,10 @@ The Validation Set Approach:❓ Usually before we train a model, we spilt the da
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Halo! I&amp;rsquo;m a graduate student from University of St. Thomas (Class of 2021). This a hugo site hosted on Gihub. This website will include my thoughts/projects/learning journey.
+      <description>Hello! I&amp;rsquo;m a graduate student from University of St. Thomas (Class of 2021). This a hugo site hosted on Gihub. This website will include my thoughts/projects/learning journey.
 Things I absolute love&amp;hellip; DIY/CRAFTS
 Latin Dance
-Let&amp;rsquo;s connect 💼 LinkedIn
+Let&amp;rsquo;s connect! 💼 LinkedIn
 💻 GitHub</description>
     </item>
     
@@ -140,7 +159,7 @@ Let&amp;rsquo;s connect 💼 LinkedIn
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/coding_practice/</guid>
-      <description>   Link Language Difficulty     Big Countries mysql Easy   Classes More Than 5 students mysql Easy   Customers Who Never Order mysql Easy   Delete Duplicate Emails mysql Easy   Second Highest Salary mysql Easy   Duplicate Email mysql Easy   Combine Two Tables mysql Easy   Earn more than manager mysql Easy   Rising Temp mysql Easy   Two Number Sum python Easy   Validate Subsequence python Easy    </description>
+      <description>   Link Language Difficulty     Not boring movies mysql Easy   Big Countries mysql Easy   Classes More Than 5 students mysql Easy   Customers Who Never Order mysql Easy   Delete Duplicate Emails mysql Easy   Second Highest Salary mysql Easy   Duplicate Email mysql Easy   Combine Two Tables mysql Easy   Earn more than manager mysql Easy   Rising Temp mysql Easy   Two Number Sum python Easy   Validate Subsequence python Easy    </description>
     </item>
     
     <item>

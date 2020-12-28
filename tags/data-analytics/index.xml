@@ -5,23 +5,33 @@
     <link>/tags/data-analytics/</link>
     <description>Recent content in data analytics on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/data-analytics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/data-analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2. Clinical Decision Systems(CDSS)</title>
-      <link>/blog/healtcare_/</link>
+      <title>3. Project: Discover hidden diseases topics with LDA</title>
+      <link>/blog/3.-lda/</link>
+      <pubDate>Sun, 27 Dec 2020 22:39:59 -0500</pubDate>
+      
+      <guid>/blog/3.-lda/</guid>
+      <description>Introduction Topic modeling for analyzing healthcare-related content has been used extensively. Latent Dirichlet Allocation(LDA) is one of the most famous topic modeling methods. LDA can help to discover hidden topics in document collections. In healthcare, it can be used for searching hidden disease topics.
+For example, Prier et al.(2012) used LDA to identify several topics from health-related tweets, and found out that twitter users typically discussed strategies to quit smoking and recover from smoking addiction.</description>
+    </item>
+    
+    <item>
+      <title>2. Clinical Decision Support Systems(CDSS)</title>
+      <link>/blog/2.-healtcare_cdss/</link>
       <pubDate>Mon, 21 Dec 2020 22:39:59 -0500</pubDate>
       
-      <guid>/blog/healtcare_/</guid>
+      <guid>/blog/2.-healtcare_cdss/</guid>
       <description>Introduction Last time, we talked about data sources and coding system. Electronic Health Record system is where the patient&amp;rsquo;s records being stored. Different coding system(ICD-9, ICD-10, SNOWMED-CT, etc) are being used to ensure consistency and communication. This post will talk about Clinical Decision Support System(CDSS), a computer-based programs that analyzes data from EHR.
 Clinical Decision Support System(CDSS) Clinical Decision Support System is used for assisting patient-related decision making process. It can effectively determine the optimal treatment, estimating clinical and financial outcomes of different treatment.</description>
     </item>
     
     <item>
       <title>1. Healthcare Data Sources</title>
-      <link>/blog/healtcare_data_source/</link>
+      <link>/blog/1.-healtcare_data_source/</link>
       <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
       
-      <guid>/blog/healtcare_data_source/</guid>
+      <guid>/blog/1.-healtcare_data_source/</guid>
       <description>Introduction Healthcare analytics has gained more popularity in the recent years. Healthcare analytics includes but not limited to: biomedical image analysis, sensor data analysis, biomedical signal analysis, clinical text mining, clinical prediction models, Clinical Decision Support Systems(CDSS), fraud detection, etc.
 This post will talk about healthcare data sources, coding system, and
 1. Electronic Health Record (EHR) EHR, or electric health record is where patient&amp;rsquo;s medical histories are stored at. With EHR, patient&amp;rsquo;s medical records are easier to retrieved by health providers.</description>

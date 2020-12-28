@@ -8,13 +8,22 @@
     <lastBuildDate>Sun, 20 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/concept/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. Healthcare Data Sources</title>
-      <link>/blog/healtcare_data_source/</link>
+      <link>/blog/1.-healtcare_data_source/</link>
       <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
       
-      <guid>/blog/healtcare_data_source/</guid>
+      <guid>/blog/1.-healtcare_data_source/</guid>
       <description>Introduction Healthcare analytics has gained more popularity in the recent years. Healthcare analytics includes but not limited to: biomedical image analysis, sensor data analysis, biomedical signal analysis, clinical text mining, clinical prediction models, Clinical Decision Support Systems(CDSS), fraud detection, etc.
 This post will talk about healthcare data sources, coding system, and
 1. Electronic Health Record (EHR) EHR, or electric health record is where patient&amp;rsquo;s medical histories are stored at. With EHR, patient&amp;rsquo;s medical records are easier to retrieved by health providers.</description>
+    </item>
+    
+    <item>
+      <title>Pandas</title>
+      <link>/blog/pandas/</link>
+      <pubDate>Sun, 20 Dec 2020 21:56:06 -0500</pubDate>
+      
+      <guid>/blog/pandas/</guid>
+      <description></description>
     </item>
     
     <item>

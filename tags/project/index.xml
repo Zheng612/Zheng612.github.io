@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 10 Oct 2020 21:56:06 -0500</lastBuildDate><atom:link href="/tags/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Project: Heart disease prediction</title>
+      <title>heart disease prediction</title>
       <link>/blog/chd/</link>
       <pubDate>Sat, 10 Oct 2020 21:56:06 -0500</pubDate>
       
@@ -17,7 +17,7 @@ The ‘framingham’ dataset provides information whether the participants devel
     </item>
     
     <item>
-      <title>Project: Analyzing baby product purchase pattern with Excel</title>
+      <title>analyzing baby product purchase pattern with Excel</title>
       <link>/blog/baby_product/</link>
       <pubDate>Tue, 01 Sep 2020 22:39:59 -0500</pubDate>
       
@@ -28,7 +28,7 @@ Dataset Summary: This Mum_Baby dataset contains 952 baby’s information includi
     </item>
     
     <item>
-      <title>Project: Analyzing UNIQLO sales trend with Python</title>
+      <title>analyzing UNIQLO sales trend with Python</title>
       <link>/blog/uniqlo_sales_analysis/</link>
       <pubDate>Sat, 25 Jul 2020 21:56:06 -0500</pubDate>
       

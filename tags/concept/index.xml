@@ -7,31 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 20 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/concept/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1. Healthcare Data Sources</title>
-      <link>/blog/1.-healtcare_data_source/</link>
+      <title>healthcare data sources</title>
+      <link>/blog/healtcare_data_source/</link>
       <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
       
-      <guid>/blog/1.-healtcare_data_source/</guid>
+      <guid>/blog/healtcare_data_source/</guid>
       <description>Introduction Healthcare analytics has gained more popularity in the recent years. Healthcare analytics includes but not limited to: biomedical image analysis, sensor data analysis, biomedical signal analysis, clinical text mining, clinical prediction models, Clinical Decision Support Systems(CDSS), fraud detection, etc.
 This post will talk about healthcare data sources, coding system, and
 1. Electronic Health Record (EHR) EHR, or electric health record is where patient&amp;rsquo;s medical histories are stored at. With EHR, patient&amp;rsquo;s medical records are easier to retrieved by health providers.</description>
     </item>
     
     <item>
-      <title>Pandas</title>
-      <link>/blog/pandas/</link>
-      <pubDate>Sun, 20 Dec 2020 21:56:06 -0500</pubDate>
-      
-      <guid>/blog/pandas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>what is descriptive and predictive analysis in healthcare?</title>
-      <link>/blog/healthcare/</link>
+      <link>/blog/hca_intro/</link>
       <pubDate>Sun, 01 Nov 2020 10:56:06 -0500</pubDate>
       
-      <guid>/blog/healthcare/</guid>
+      <guid>/blog/hca_intro/</guid>
       <description>Faster Diagnosis, Better Treatment: For a long time, healthcare professionals have been using data science to optimize patient outcomes. The application can include but not limited to:
  predictive analytics of frequent medical event sequence; predict healthcare event/costs/readmission rate; clustering medical records, or predicting causations between medical events; Classifying medical images/videos, etc.  Using data science allows the industry to draw actionable insights in a cost-effective way. For example, Stanford ML Group developed a model which can diagnose irregular heart rhythms from single-lead ECG signals.</description>
     </item>

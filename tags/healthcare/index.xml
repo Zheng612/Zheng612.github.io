@@ -7,28 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 21 Dec 2020 22:39:59 -0500</lastBuildDate><atom:link href="/tags/healthcare/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>2. Clinical Decision Support Systems(CDSS)</title>
-      <link>/blog/2.-healtcare_cdss/</link>
+      <title>Clinical Decision Support Systems(CDSS)</title>
+      <link>/blog/healtcare_cdss/</link>
       <pubDate>Mon, 21 Dec 2020 22:39:59 -0500</pubDate>
       
-      <guid>/blog/2.-healtcare_cdss/</guid>
+      <guid>/blog/healtcare_cdss/</guid>
       <description>Introduction Last time, we talked about data sources and coding system. Electronic Health Record system is where the patient&amp;rsquo;s records being stored. Different coding system(ICD-9, ICD-10, SNOWMED-CT, etc) are being used to ensure consistency and communication. This post will talk about Clinical Decision Support System(CDSS), a computer-based programs that analyzes data from EHR.
 Clinical Decision Support System(CDSS) Clinical Decision Support System is used for assisting patient-related decision making process. It can effectively determine the optimal treatment, estimating clinical and financial outcomes of different treatment.</description>
     </item>
     
     <item>
-      <title>1. Healthcare Data Sources</title>
-      <link>/blog/1.-healtcare_data_source/</link>
+      <title>healthcare data sources</title>
+      <link>/blog/healtcare_data_source/</link>
       <pubDate>Sun, 20 Dec 2020 22:39:59 -0500</pubDate>
       
-      <guid>/blog/1.-healtcare_data_source/</guid>
+      <guid>/blog/healtcare_data_source/</guid>
       <description>Introduction Healthcare analytics has gained more popularity in the recent years. Healthcare analytics includes but not limited to: biomedical image analysis, sensor data analysis, biomedical signal analysis, clinical text mining, clinical prediction models, Clinical Decision Support Systems(CDSS), fraud detection, etc.
 This post will talk about healthcare data sources, coding system, and
 1. Electronic Health Record (EHR) EHR, or electric health record is where patient&amp;rsquo;s medical histories are stored at. With EHR, patient&amp;rsquo;s medical records are easier to retrieved by health providers.</description>
     </item>
     
     <item>
-      <title>Association rule mining</title>
+      <title>association rule mining</title>
       <link>/blog/association-rule/</link>
       <pubDate>Wed, 18 Nov 2020 21:56:06 -0500</pubDate>
       

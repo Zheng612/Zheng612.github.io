@@ -5,7 +5,41 @@
     <link>/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 31 May 2021 21:56:06 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Jul 2021 10:11:39 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use and remove seasonality in time series analysis?</title>
+      <link>/blog/time_series_deseason/</link>
+      <pubDate>Tue, 13 Jul 2021 10:11:39 -0500</pubDate>
+      
+      <guid>/blog/time_series_deseason/</guid>
+      <description>“A repeating pattern within each year is known as seasonal variation, although the term is applied more generally to repeating patterns within any fixed period” – Introductory Time Series with R
+As the definition shown above, seasonality is another characteristic of time series datasets. It usually contains cycles that repeat over a specific time period. However, the repeating cycles may obscure the signal that we wish to model when conducting time series forecasting.</description>
+    </item>
+    
+    <item>
+      <title>Use and remove trends in time series analysis?</title>
+      <link>/blog/time_series_detrend/</link>
+      <pubDate>Fri, 14 May 2021 18:39:59 -0500</pubDate>
+      
+      <guid>/blog/time_series_detrend/</guid>
+      <description>Trend is one of the characteristics of time series data. In this article, we will talk about trends and how to remove them.
+Trend is a continued increase or decrease in the series over time. There are different types of trends, such as deterministic trend, which are trends that are consistently increasing or decreasing. Another trend type that changes inconsistently(stochastic trends). Identifying trends in time series datasets can lead to faster modeling, simplification of the problems and improvement upon model performance.</description>
+    </item>
+    
+    <item>
+      <title>What is decomposition in time series analysis?</title>
+      <link>/blog/time_series_decomposition/</link>
+      <pubDate>Wed, 10 Mar 2021 18:39:59 -0500</pubDate>
+      
+      <guid>/blog/time_series_decomposition/</guid>
+      <description>Decomposition is primarily used in time series analysis. It involves thinking of a series in terms of level, trend, seasonality, and noise components. These four components are defined as follow:
+🔎 Level: The average value in the series
+🔎 Trend: The increasing or decreasing trend
+🔎 Seasonality: The repeating cycle in terms of seasons
+🔎 Noise: Random variation
+Why it’s important to decompose? The time series decomposition helps with forecasting by breaking a time series down into different components – systematic and non-systematic components.</description>
+    </item>
+    
     <item>
       <title>discover hidden diseases topics with LDA</title>
       <link>/blog/lda/</link>
@@ -137,8 +171,8 @@ The Validation Set Approach:❓ Usually before we train a model, we spilt the da
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Hey there, I&amp;rsquo;m glad you found me! I recently graduated from University of St. Thomas, Data Science program. This a hugo site hosted on Github. This website will include my thoughts/projects/learning journey.
-Things I absolute love&amp;hellip; Hiking 🧗‍♀️ /Reading 📖 /Learning new Recipes👩‍🍳
+      <description>Hey there, I&amp;rsquo;m glad you found me! My name is Jessie, I recently graduated from University of St. Thomas, Data Science program. This a Hugo site hosted on Github. This website includes my thoughts/projects/learning journey.
+Things I absolute love&amp;hellip; Hiking 🧗‍♀️ / Reading 📖 / Gardening 🥕 / Learning new Recipes👩🏻‍🍳
 Let&amp;rsquo;s connect! 💼 LinkedIn
 💻 GitHub</description>
     </item>
@@ -171,7 +205,7 @@ Hugo Web How to add a custom domain to your hugo site?</description>
       <guid>/coding_practice/</guid>
       <description>Python (in progress) Easy |Two Number Sum| |Validate Subsequence| |1119| |1480| |1108| |1672| |1431| |1470| |1512| |771| |1603| |1365| |1528| |1281| |1342| |1313| |1165| |1720| |1678| |1389|
 SQL (complete) Hard |1767| |1479| |1369| |1651| |1384| |1412| |1225| |569| |618| |1097| |1159| |1635| |615| |1194| |1127 |1336| |601| |571| |185| |1645| |579 |262|
-Medium |1843| |1841| |1445| |1393| |1270| |1308| |1285| |1699| |1421| |1596| |1709| |1398| |1468| |1715| |534| |1364| |1077| |1440| |1355| |1613| |1532| |1112| |1204| |1321| |608| |1783| |1747| |1264| |1193| |1164| |1126| |1045| |570| |1549| |626| |1459| |1158| |1174| |612| |1501| |1341| |602| |585| |1212| |1555| 574| |580| |178| |1070| |1149| |1205| |550| |1098| |180| |1811| |578| |184| |1454| |1132| |177| |614| |1831| |1867| |1875|</description>
+Medium |1843| |1841| |1445| |1393| |1270| |1308| |1285| |1699| |1421| |1596| |1709| |1398| |1468| |1715| |534| |1364| |1077| |1440| |1355| |1613| |1532| |1112| |1204| |1321| |608| |1783| |1747| |1264| |1193| |1164| |1126| |1045| |570| |1549| |626| |1459| |1158| |1174| |612| |1501| |1341| |602| |585| |1212| |1555| 574| |580| |178| |1070| |1149| |1205| |550| |1098| |180| |1811| |578| |184| |1454| |1132| |177| |614| |1831| |1867| |1875| |1907|</description>
     </item>
     
     <item>

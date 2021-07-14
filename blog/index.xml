@@ -7,6 +7,40 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 31 May 2021 21:56:06 -0500</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Use and remove seasonality in time series analysis?</title>
+      <link>/blog/time_series_deseason/</link>
+      <pubDate>Tue, 13 Jul 2021 10:11:39 -0500</pubDate>
+      
+      <guid>/blog/time_series_deseason/</guid>
+      <description>“A repeating pattern within each year is known as seasonal variation, although the term is applied more generally to repeating patterns within any fixed period” – Introductory Time Series with R
+As the definition shown above, seasonality is another characteristic of time series datasets. It usually contains cycles that repeat over a specific time period. However, the repeating cycles may obscure the signal that we wish to model when conducting time series forecasting.</description>
+    </item>
+    
+    <item>
+      <title>Use and remove trends in time series analysis?</title>
+      <link>/blog/time_series_detrend/</link>
+      <pubDate>Fri, 14 May 2021 18:39:59 -0500</pubDate>
+      
+      <guid>/blog/time_series_detrend/</guid>
+      <description>Trend is one of the characteristics of time series data. In this article, we will talk about trends and how to remove them.
+Trend is a continued increase or decrease in the series over time. There are different types of trends, such as deterministic trend, which are trends that are consistently increasing or decreasing. Another trend type that changes inconsistently(stochastic trends). Identifying trends in time series datasets can lead to faster modeling, simplification of the problems and improvement upon model performance.</description>
+    </item>
+    
+    <item>
+      <title>What is decomposition in time series analysis?</title>
+      <link>/blog/time_series_decomposition/</link>
+      <pubDate>Wed, 10 Mar 2021 18:39:59 -0500</pubDate>
+      
+      <guid>/blog/time_series_decomposition/</guid>
+      <description>Decomposition is primarily used in time series analysis. It involves thinking of a series in terms of level, trend, seasonality, and noise components. These four components are defined as follow:
+🔎 Level: The average value in the series
+🔎 Trend: The increasing or decreasing trend
+🔎 Seasonality: The repeating cycle in terms of seasons
+🔎 Noise: Random variation
+Why it’s important to decompose? The time series decomposition helps with forecasting by breaking a time series down into different components – systematic and non-systematic components.</description>
+    </item>
+    
+    <item>
       <title>discover hidden diseases topics with LDA</title>
       <link>/blog/lda/</link>
       <pubDate>Sun, 27 Dec 2020 22:39:59 -0500</pubDate>

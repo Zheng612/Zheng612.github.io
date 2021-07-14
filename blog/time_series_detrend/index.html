@@ -2,12 +2,12 @@
 <html lang="">
 
 <head>
-  <title>what is exploratory data analysis? | </title>
+  <title>Use and remove trends in time series analysis? | </title>
 
   <meta charset="UTF-8">
   <meta name="language" content="en">
   <meta name="description" content="">
-  <meta name="keywords" content="Machine Learning">
+  <meta name="keywords" content="time series analysis">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,8 +48,8 @@
             "@id": ""
       },
       "articleSection" : "blog",
-      "name" : "what is exploratory data analysis?",
-      "headline" : "what is exploratory data analysis?",
+      "name" : "Use and remove trends in time series analysis?",
+      "headline" : "Use and remove trends in time series analysis?",
       "description" : "",
       "inLanguage" : "en-US",
       "author" : "",
@@ -57,12 +57,12 @@
       "publisher": "",
       "accountablePerson" : "",
       "copyrightHolder" : "",
-      "copyrightYear" : "2020",
-      "datePublished": "2020-10-01 21:56:06 -0500 CDT",
-      "dateModified" : "2020-10-01 21:56:06 -0500 CDT",
-      "url" : "\/blog\/eda\/",
-      "wordCount" : "377",
-      "keywords" : ["Machine Learning", "Blog"]
+      "copyrightYear" : "2021",
+      "datePublished": "2021-05-14 18:39:59 -0500 CDT",
+      "dateModified" : "2021-05-14 18:39:59 -0500 CDT",
+      "url" : "\/blog\/time_series_detrend\/",
+      "wordCount" : "420",
+      "keywords" : ["time series analysis", "Blog"]
     }
   
   </script>
@@ -119,61 +119,57 @@
       <div class="post__container">
         <div class="post">
           <header class="post__header">
-            <h1 id="post__title">what is exploratory data analysis?</h1>
-            <time datetime="2020-10-01 21:56:06 -0500 CDT" class="post__date">Oct 1 2020</time> 
+            <h1 id="post__title">Use and remove trends in time series analysis?</h1>
+            <time datetime="2021-05-14 18:39:59 -0500 CDT" class="post__date">May 14 2021</time> 
           </header>
           <article class="post__content">
               
-<p><img src="/images/stats.gif" alt="Alt text for my gif"></p>
-<p>Understanding data is one of the most important steps for anyone starting out a machine learning project. Exploratory Data Analysis is one of the ways to do that. “EDA is performed in order to define and refine the selection of feature variables that will be used for machine learning”. This post briefly talks about EDA and Bivariate Analysis.</p>
-<p>The post will cover:</p>
-<p>What is EDA and Bivariate Analysis</p>
-<p>Why it is important</p>
-<p>EDA and feature Engineering</p>
-<h2 id="what-is-eda">What is EDA?<a class="anchor" href="#what-is-eda">#</a></h2>
-<p>EDA stands for Exploratory Data Analysis. It is a crucial step to understand data. There are so many useful information that you can get from EDA:</p>
-<p>💡Distribution(skewness)</p>
-<p>💡Outliers(See the figure below)</p>
-<p>💡Mean</p>
-<p>💡Median</p>
-<p>💡Correlation</p>
-<p>💡etc;</p>
-<p><img src="/images/outlier.png" alt="this is an image"></p>
-<p>Knowing about these are very important in terms of understanding our data. Just like the box plot shown below, because of there are a lot of outliers observed in the totChol column, the missing values were filled with median instead of mean.</p>
-<h2 id="bivariate-analysis">Bivariate Analysis<a class="anchor" href="#bivariate-analysis">#</a></h2>
-<p>Additionally, I also utilized Bivariate Analysis in my project to understand the data. Bivariate analysis, just like its name, refers to analysis that help you understand association between two variables, usually with visualizations.</p>
-<p>For example,  I wanted to understand the association between prevalentStroke and whether the person will get heart disease. As shown below, people who have prevalent stroke is more likely to develop Heart Disease than people who don’t have prevalent stroke.</p>
-<pre><code>data[[&quot;prevalentStroke&quot;,&quot;TenYearCHD&quot;]].groupby
-(&quot;prevalentStroke&quot;, as_index=False).mean().sort_values(&quot;TenYearCHD&quot;)
+<p><img src="/images/time_trend.gif" alt="Alt text for my gif"></p>
+<p>Trend is one of the characteristics of time series data. In this article, we will talk about trends and how to remove them.</p>
+<p>Trend is a continued increase or decrease in the series over time. There are different types of trends, such as deterministic trend, which are trends that are consistently increasing or decreasing.  Another trend type that changes inconsistently(stochastic trends). Identifying trends in time series datasets can lead to faster modeling, simplification of the problems and improvement upon model performance. There are different ways to identify a trend, but the most common way is to plot it and visualize the dataset. Here is an example:</p>
+<p><img src="/images/time2.png" alt="Alt text for my gif"></p>
+<p>Detrend by Differencing:
+The simplest method to detrend a time series is by differencing – calculating the current time steps as the difference between original observations and previous time steps. Let’s see an example of detrending previous example:</p>
+<pre><code class="language-json">X=data1.values
+diff=list()
+for i in range(0, len(X)):
+    Z=X[i]-X[i-1]
+    diff.append(Z)
+diff
+from matplotlib import pyplot
+# Compare before and after remove trend:
+pyplot.plot(diff)
+pyplot.plot(X)
 </code></pre>
-<p>Output:</p>
-<table>
-<thead>
-<tr>
-<th>prevalentStroke</th>
-<th>TenYearCHD</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>0.440000</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0.150178</td>
-</tr>
-</tbody>
-</table>
-<p>The reason that I used Bivariate Analysis was because I wanted to know the relationship between each category and the dependent variable(coronary heart disease). Second of all, I wanted to test our hypothesis, which states that people with bmi over 30 are more likely to develop heart disease. And the probability of getting heart disease within each BMI range, should be calculated as:
-<code>Number of people(BMI  20~30) that have CHD/Total number of people(BMI 20~30)</code></p>
-<pre><code>g=sns.FacetGrid(data, col=&quot;TenYearCHD&quot;)
-g.map(plt.hist, &quot;BMI)
+<p><img src="/images/time3.png" alt="Alt text for my gif"></p>
+<p>Running the previous example creates the new detrended dataset (plotted in blue). By comparing the original plot(orange line), the trend does appear to have been removed.</p>
+<p>Detrending by Model Fitting:
+A trending is often easily visualized as a line through the observations. By subtracting prediction values from the observation values, the residuals can be used to detrend a time series.</p>
+<p>Value(t)=observation(t)-prediction(t)</p>
+<p>By doing this, the residuals of the fit of the model will be used as a detrended form. Therefore, we need to fit our data with linear regression model first, and then subtract it from the original dataset. Let’s see an example:</p>
+<pre><code class="language-json">from sklearn.linear_model import LinearRegression
+
+X2=[i for i in range(0, len(data1))]
+X2=np.reshape(X2, (len(X2), 1))
+y1=data1.values
+
+linear_model=LinearRegression()
+linear_model.fit(X2, y1)
+y3=linear_model.predict(X2)
+
+f = plt.figure()
+f.set_figwidth(15)
+f.set_figheight(5)
+plt.plot(y1)
+plt.plot(y3)
+pyplot.plot(diff)
 </code></pre>
-<p><img src="/images/bmi.png" alt="this is an image"></p>
-<h3 id="conclusion">Conclusion:<a class="anchor" href="#conclusion">#</a></h3>
-<p>In machine learning, it is beneficial to do EDA because it helps you to understand the data. After EDA, you can combine insights that you have got from the data, to feature engineering &mdash; to create or drop features. Therefore, EDA provide insights, feature engineering makes action on the data.</p>
-<p>(Originally written on wix.com Apr 15 2020)</p>
+<p><img src="/images/time4.png" alt="Alt text for my gif"></p>
+<p>The orange line shows the trend after detrending with linear regression, where the green line is used to represent the detrend. We can see the difference clearly where detrending by model fitting is more effective compared to differencing method.</p>
+<h2 id="conclusion">Conclusion:<a class="anchor" href="#conclusion">#</a></h2>
+<p>In this article, we talked about detrending time series dataset. It shows two methods to remove the trend – by subtracting the previous time step values and by fitting a linear model. The example concludes that using the model fitting method is more effective in terms of detrending a time series data. The future post will explore more techniques in time series analysis.</p>
+<h3 id="reference">Reference:<a class="anchor" href="#reference">#</a></h3>
+<p>Introduction to Time Series Forecasting with Python: How to Prepare Data and Develop Models to Predict the Future (Jason Brownlee)</p>
 
 
               
@@ -182,25 +178,20 @@ g.map(plt.hist, &quot;BMI)
 
 <ul class="tags__list">
     
-    <li class="tag__item">
-        <a class="tag__link" href="/tags/eda/">eda</a>
-    </li>
-    <li class="tag__item">
-        <a class="tag__link" href="/tags/concept/">concept</a>
-    </li></ul>
+    </ul>
 
  <div class="pagination">
   
-    <a class="pagination__item" href="/blog/baby_product/">
+    <a class="pagination__item" href="/blog/time_series_decomposition/">
         <span class="pagination__label">Previous Post</span>
-        <span class="pagination__title">analyzing baby product purchase pattern with Excel</span>
+        <span class="pagination__title">What is decomposition in time series analysis?</span>
     </a>
   
 
   
-    <a class="pagination__item" href="/blog/chd/">
+    <a class="pagination__item" href="/blog/time_series_deseason/">
       <span class="pagination__label">Next Post</span>
-      <span class="pagination__title" >heart disease prediction</a>
+      <span class="pagination__title" >Use and remove seasonality in time series analysis?</a>
     </a>
   
 </div>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <title>Use and remove stationarity? | </title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="time series analysis">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.8a92e8cd796cd68e81df831649d4a7ddee5f9c2504a95f5b93ef40764b3eaab3.css" integrity="sha256-ipLozXls1o6B34MWSdSn3e5fnCUEqV9bk&#43;9Adks&#43;qrM="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.d92f726ae7fd845dc1126d41ec77ec177fcf64005824586099cd9aa477cf9f39.css" integrity="sha256-2S9yauf9hF3BEm1B7HfsF3/PZABYJFhgmc2apHfPnzk="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": ""
+      },
+      "articleSection" : "blog",
+      "name" : "Use and remove stationarity?",
+      "headline" : "Use and remove stationarity?",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2021",
+      "datePublished": "2021-08-07 18:39:59 -0500 CDT",
+      "dateModified" : "2021-08-07 18:39:59 -0500 CDT",
+      "url" : "\/blog\/time_series_stationary\/",
+      "wordCount" : "694",
+      "keywords" : ["time series analysis", "Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/about">about</a>
+      </li>
+    
+      <li>
+        <a  href="/category">blog by category</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog by date</a>
+      </li>
+    
+      <li>
+        <a  href="/coding_practice">coding practice</a>
+      </li>
+    
+      <li>
+        <a  href="/contact">contact</a>
+      </li>
+    
+      <li>
+        <a  href="/">home</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Use and remove stationarity?</h1>
+            <time datetime="2021-08-07 18:39:59 -0500 CDT" class="post__date">Aug 7 2021</time> 
+          </header>
+          <article class="post__content">
+              
+<p><img src="/images/stationary6.gif" alt="Alt text for my gif"></p>
+<p>‘If we fit a stationary model to data, we assume our data are a realization of a
+stationary process. So our first step in an analysis should be to check whether there
+is any evidence of a trend or seasonal effects and, if there is, remove them.’ &mdash;Introductory Time Series with R.</p>
+<p>A time series is stationary, that means the statistical properties such as mean, variance, autocorrelation are all consistent over time. Stationary time series can be easier to model. Let’s see a example of stationary data:</p>
+<p><img src="/images/stationary1.png" alt="Alt text for my gif"></p>
+<p>On contrast, non-stationary dataset shows seasonality, cycles and other structures that depend on the time index. Summary statistics such as mean and variance change over time, and make the model hard to capture the important factor. Like previous posts where we talked about detrend and correct seasonal factors, classical time series analysis and forecasting methods concerned with making non-stationary data to stationary data. Let’s see an example of non-stationary data:</p>
+<p><img src="/images/stationary2.png" alt="Alt text for my gif"></p>
+<p>By looking at plots above, we know there is a seasonal trend in our dataset, and therefore, the data is non-stationary. There are also other ways to check for stationary, such as summary statistics and statistical tests.</p>
+<h2 id="summary-statistics">Summary Statistics:<a class="anchor" href="#summary-statistics">#</a></h2>
+<p>Checking summary statistics is one of the ways to see if a time series is stationary or non-stationary. If a time series is stationary, the mean and variance should be consistent over time. We can then split our dataset into different groups and calculates the mean and variance of each group. Let us use the previous sales data as an example:</p>
+<pre><code class="language-json">data2.hist()
+</code></pre>
+<p><img src="/images/stationary3.png" alt="Alt text for my gif"></p>
+<p>By looking at the histogram, we know that the data is highly right skewed. Next, we will split the data into two groups and calculates the mean and variance of each group.</p>
+<pre><code class="language-json">length=len(data2)/2
+split=int(length)
+X1=data2[0:split]
+X2=data2[split:]
+mean1=X1.mean()
+mean2=X2.mean()
+var1=X1.var()
+var2=X2.var()
+print('mean1:', mean1, &quot;mean2:&quot;, mean2)
+print('var1:', var1, 'var2:', var2)
+</code></pre>
+<pre><code class="language-json">Output: 
+mean1: 72517.85470459521 mean2: 152722.51681222717
+var1: 9433357685.309347 var2: 23493684358.79559
+</code></pre>
+<p>By looking at the mean and variance from two groups, we can definitely say that the time series is non-stationary. Also, by looking at the plot again, it looks like that the seasonality is growing, and suggests an exponential growth from season to season. Therefore, we can use log transformation to flatten out the exponential factor. As the line plot shown below, the exponential growth seems to be diminished compared to previous plot.</p>
+<pre><code class="language-json">X=data2.values
+X=np.log(X)
+f=plt.figure()
+f.set_figwidth(15)
+pyplot.plot(X)
+</code></pre>
+<p><img src="/images/stationary4.png" alt="Alt text for my gif"></p>
+<pre><code class="language-json">pyplot.hist(X)
+</code></pre>
+<p><img src="/images/stationary5.png" alt="Alt text for my gif"></p>
+<p>Running the code above plot the histogram. We can see that the histogram is more like a Gaussian distribution, rather than right skewed. Now, let’s calculates the mean and variance across the groups after the log transformation:</p>
+<pre><code class="language-json">split2=int(len(X)/2)
+X3, X4=X[0:split], X[split:]
+mean3, mean4=X3.mean(), X4.mean()
+var3, var4=X3.var(), X4.var()
+print(&quot;mean3:&quot;, mean3, &quot;mean4:&quot;, mean4)
+print(&quot;var3:&quot;, var3, &quot;var4:&quot;, var4)
+</code></pre>
+<pre><code class="language-json">[output]
+mean3: 10.480743900555884 mean4: 11.429529392014638
+var3: 1.5453799930195664 var4: 1.2788258644987915
+</code></pre>
+<p>Running the code above shows the mean and variance that are very close to each other. This means that we transformed our non-stationary dataset to stationary.</p>
+<h2 id="augmented-dickey-fuller-test">Augmented Dickey-Fuller test<a class="anchor" href="#augmented-dickey-fuller-test">#</a></h2>
+<p>The Augmented Dickey-Fuller test is also called a unit root test. The intuition behind is to determine how strongly a time series is defined by a trend. The null hypothesis of the test is that the time series can be represented by a unit root, that it is not stationary, it has time dependent structures. The alternative hypothesis is that the time series is stationary. If p-value is below a threshold (for example 5%), then we reject the null hypothesis, and thus the time series is stationary. Otherwise, we fail to reject the null hypothesis that means the time series is non-stationary.</p>
+<pre><code class="language-json">from statsmodels.tsa.stattools import adfuller
+X_augmented=data2.values
+result=adfuller(X_augmented)
+print('ADF statistics: ', result[0])
+print('p-value:' ,result[1])
+print('key value:')
+for key, value in result[4].items():
+    print((key, value))
+</code></pre>
+<pre><code class="language-json">[output]
+ADF statistics:  -4.253573724998073
+p-value: 0.0005340353910033514
+key value:
+('1%', -3.437694005510983)
+('5%', -2.8647819837978683)
+('10%', -2.5684962548451375)
+</code></pre>
+<p>Running the code suggests that we can reject the null hypothesis, and thus our dataset is stationary or does not have time-dependent structure.</p>
+<h2 id="conclusion">Conclusion:<a class="anchor" href="#conclusion">#</a></h2>
+<p>There are couple methods to check if a time series is stationary or non-stationary. Most easy one is to plot and see the basic summary such as mean and variance. We can also calculate the p-value to check if the time series is stationary or not.</p>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    </ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="/blog/time_series_deseason/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">Use and remove seasonality in time series analysis?</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" title="LinkedIn"
+         href="https://www.linkedin.com/in/jessie-zheng612/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/linkedin.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="GitHub"
+         href="https://github.com/Zheng612"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Email"
+         href="mailto:zhengjessie1995@gmail.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" title="Instagram"
+         href="https://www.instagram.com/manyu1201/"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('svg/instagram.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p></p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

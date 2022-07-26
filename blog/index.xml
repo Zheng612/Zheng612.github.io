@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 31 May 2021 21:56:06 -0500</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Tableau project write up</title>
+      <link>/blog/uniqlo_tableau-project-write-up/</link>
+      <pubDate>Thu, 21 Jul 2022 20:56:06 -0500</pubDate>
+      
+      <guid>/blog/uniqlo_tableau-project-write-up/</guid>
+      <description>UNIQLO is a fast retailing brand and it is a Japanese casual wear designer, manufacturer and retailer. It entered the Chinese market in 2002, starting in Shanghai.
+In this tableau project, the scenario is that the regional sales manager from Shanghai will have meeting with store manager from each store to analyze the weekly sales trend and plan effective strategies.
+About UNIQLO: Uniqlo is one of the brands in Fast Retailing, a global company that operates multiple fashion brands.</description>
+    </item>
+    
+    <item>
       <title>Use and remove stationarity?</title>
       <link>/blog/time_series_stationary/</link>
       <pubDate>Sat, 07 Aug 2021 18:39:59 -0500</pubDate>
